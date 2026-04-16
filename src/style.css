@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+body {
+  background-color: black;
+  color: #4AF626; /* Verde terminal */
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}

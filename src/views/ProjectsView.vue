@@ -46,20 +46,20 @@
     <main class="results-container">
       <div class="content-grid">
         <section class="results-list">
-          <p class="results-stats">Cerca de 128 resultados (0.38 segundos)</p>
+          <p class="results-stats">Close to 9 results (0.38 seconds)</p>
 
           <section class="result-item">
             <div class="result-url-row">
               <div class="favicon-container is-image">
                 <img src="../assets/ME.jpg" alt="Erick Pérez" class="favicon-me">
               </div>
-              <span class="url-text">https://erickperez.com › sobre-mi</span>
+              <span class="url-text">https://erickperez.com › About Me</span>
             </div>
             <router-link to="/sobre-erick" class="result-title">
-              Quién soy - Erick Pérez - Programador y Artista
+              Who I am - Erick Pérez
             </router-link>
             <p class="result-description">
-              Conoce la trayectoria de Erick Pérez. Programador autodidacta con pasión por el backend y artista del tatuaje realista. Descubre su historia desde Rosario hasta su retorno a Argentina.
+              Junior Python developer focused on DevOps, CI/CD, Docker, FastAPI, AWS, and databases, combining marketing expertise with scalable technical solutions.
             </p>
           </section>
 
@@ -68,13 +68,13 @@
               <div class="favicon-container is-image">
                 <img src="../assets/case.png" alt="">
               </div>
-              <span class="url-text">https://erickperez.com › experiencia › empleos</span>
+              <span class="url-text">https://erickperez.com › experience › jobs</span>
             </div>
             <router-link to="/experiencia" class="result-title">
-              Experiencia - Empleos y Trayectoria Profesional
+              Experience - Employment and Professional Career Path
             </router-link>
             <p class="result-description">
-              Historial laboral detallado, incluyendo más de 10 años en roles Senior de Quality Assurance y Email Marketing para empresas internacionales.
+              Work history focused on Coupon/Email Marketing and Quality Assurance, with over 5 years leading data-driven campaigns for international companies, recognized for precision and error-free execution.
             </p>
           </section>
 
@@ -83,13 +83,13 @@
               <div class="favicon-container is-image">
                 <img src="../assets/books.png" alt="">
               </div>
-              <span class="url-text">https://erickperez.com › educacion › cursos</span>
+              <span class="url-text">https://erickperez.com › education › courses</span>
             </div>
             <router-link to="/educacion" class="result-title">
-              Educación - Cursos y Formación Continua
+              Education – Courses and Continuing Education
             </router-link>
             <p class="result-description">
-              Formación técnica en desarrollo de software, especialización en Python, certificaciones de AWS y estudios en arquitectura DevOps.
+              Training in web design and Python development, currently pursuing a DevOps career path along with AWS Certified Cloud Practitioner studies, focused on building a strong foundation in cloud and modern development practices.
             </p>
           </section>
 
@@ -98,13 +98,13 @@
               <div class="favicon-container is-image">
                 <img src="../assets/skills.png" alt="">
               </div>
-              <span class="url-text">https://erickperez.com › conocimientos › aptitudes</span>
+              <span class="url-text">https://erickperez.com › skills › technology Stack</span>
             </div>
             <router-link to="/conocimientos" class="result-title">
-              Conocimientos - Aptitudes y Stack Tecnológico
+              Knowledge – Skills and Technology Stack
             </router-link>
             <p class="result-description">
-              Dominio de Python, FastAPI, SQL/NoSQL, Docker, CI/CD y automatización. Habilidades en QA, Email Marketing y Diseño Artístico.
+              Proficiency in Python, FastAPI, SQL/NoSQL, Docker, CI/CD, and automation, with skills in QA, Email Marketing, and Artistic Design.
             </p>
           </section>
 
@@ -113,13 +113,13 @@
               <div class="favicon-container is-image">
                 <img src="../assets/projects.png" alt="">
               </div>
-              <span class="url-text">https://erickperez.com › portafolio › proyectos</span>
+              <span class="url-text">https://erickperez.com › portfolio › projects</span>
             </div>
             <router-link to="/mis-proyectos" class="result-title">
-              Proyectos - Desarrollo de Software y Herramientas
+              Projects – Software Development and Tools
             </router-link>
             <p class="result-description">
-              Galería de proyectos personales, incluyendo el Omni-Portfolio Orchestrator y automatizaciones para flujos de trabajo de ingeniería.
+              Portfolio of personal projects, including the Omni-Portfolio Orchestrator, a Python-based data analysis application, and a DevOps Node.js CI project featuring a complete CI/CD automation pipeline with Docker and workflow automation for engineering processes.
             </p>
           </section>
 
@@ -132,7 +132,7 @@
             </div>
             <a href="https://linkedin.com/in/erickperez" target="_blank" class="result-title">Erick Pérez - LinkedIn Profile</a>
             <p class="result-description">
-              Conecta con Erick en LinkedIn. Perfil profesional con recomendaciones, red de contactos en el sector IT y actualizaciones.
+              Connect with Erick on LinkedIn to explore a professional profile featuring recommendations, a growing network within the IT industry, and regular updates on projects, skills, and career progress. Stay up to date with his journey across Email Marketing, QA, and emerging DevOps and software development expertise.
             </p>
           </section>
 
@@ -144,7 +144,7 @@
               <div class="pagination-numbers">
                 <span class="num active">1</span><span class="num link">2</span><span class="num link">3</span><span class="num link">4</span><span class="num link">5</span><span class="num link">6</span><span class="num link">7</span><span class="num link">8</span><span class="num link">9</span><span class="num link">10</span>
               </div>
-              <span class="next-text">Siguiente</span>
+              <span class="next-text">Next</span>
             </div>
           </div>
         </section>
@@ -155,15 +155,15 @@
           </div>
           <div class="card-body">
             <h2 class="profile-name">Erick Pérez</h2>
-            <p class="profile-subtitle">Programador y Senior QA</p>
+            <p class="profile-subtitle">Jr Python & FastAPI Developer | QA & Email Marketing Specialist | DevOps Learner (Docker, CI/CD, AWS)</p>
             <div class="divider"></div>
             <p class="desc-text">
-              Profesional con más de 10 años de experiencia colaborando con empresas de Estados Unidos. Especialista en Email Marketing, QA y apasionado por el desarrollo Backend.
+              Coupon / Email Marketing and QA Specialist with 5+ years of experience leading data-driven campaigns for international brands including Disney, Wells Fargo, and The New York Times.<br><br> Skilled in CMS platforms, testing automation, and cross-regional collaboration, and recognized for precision, innovation, and delivering zero-error campaigns. <br><br>Additionally, a junior Python developer with a growing focus on DevOps practices, including CI/CD pipelines, Docker, SQL and NoSQL databases, FastAPI, AWS, and Linux, bringing a strong blend of marketing expertise and technical capability to build efficient, scalable, and reliable solutions.
             </p>
             <div class="divider"></div>
             <div class="profile-info">
-              <p><strong>Ubicación:</strong> Rosario, Argentina</p>
-              <p><strong>Ocupación:</strong> Programador Senior / Artista</p>
+              <p><strong>Location:</strong> San Jose, Costa Rica</p>
+              <p><strong>Role:</strong> Developer Junior / Python Artist</p>
             </div>
           </div>
         </aside>

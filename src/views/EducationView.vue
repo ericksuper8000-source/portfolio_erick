@@ -87,7 +87,7 @@
                 <span class="num link">9</span>
                 <span class="num link">10</span>
               </div>
-              <span class="next-text">Siguiente</span>
+              <span class="next-text">Next</span>
             </div>
           </div>
         </section>

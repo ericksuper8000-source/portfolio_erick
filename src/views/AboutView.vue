@@ -95,7 +95,7 @@
               <div class="pagination-numbers">
                 <span class="num active">1</span><span class="num link">2</span><span class="num link">3</span><span class="num link">4</span><span class="num link">5</span><span class="num link">6</span><span class="num link">7</span><span class="num link">8</span><span class="num link">9</span><span class="num link">10</span>
               </div>
-              <span class="next-text">Siguiente</span>
+              <span class="next-text">Next</span>
             </div>
           </div>
         </section>

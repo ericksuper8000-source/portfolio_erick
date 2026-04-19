@@ -1,3 +1,12 @@
+<script setup>
+import { onMounted } from 'vue';
+
+onMounted(() => {
+  // Cambia el texto de la pestaña del navegador
+  document.title = "Erick Perez - CV";
+});
+</script>
+
 <template>
   <div class="home-wrapper">
     <nav class="top-nav">
@@ -26,6 +35,7 @@
           <input 
             type="text" 
             class="search-input" 
+            placeholder="Buscar en Erick o ingresar un texto"
             @keyup.enter="$router.push('/proyectos')"
           />
           <div class="search-icons-group">
@@ -36,7 +46,7 @@
 
         <div class="buttons-container">
           <button class="btn" @click="$router.push('/proyectos')">Erick Search</button>
-          <button class="btn" @click="$router.push('/mis-proyectos')">I'm Feeling Lucky</button>
+          <button class="btn" @click="$router.push('/proyectos')">I'm Feeling Lucky</button>
         </div>
       </div>
 
@@ -64,7 +74,6 @@
 </template>
 
 <style scoped>
-/* Mantenemos tu estilo intacto, solo forzamos limpieza visual */
 .home-wrapper {
   display: flex;
   flex-direction: column;
@@ -134,8 +143,12 @@
   padding: 0 14px;
   height: 46px;
   background: white;
+  transition: box-shadow 0.2s;
 }
-.search-box:hover { box-shadow: 0 1px 6px rgba(32,33,36,0.28); border-color: transparent; }
+.search-box:hover { 
+  box-shadow: 0 1px 6px rgba(32,33,36,0.28); 
+  border-color: transparent; 
+}
 
 .search-input {
   flex: 1;
@@ -143,10 +156,17 @@
   outline: none;
   padding: 0 10px;
   font-size: 16px;
-  color: #202124 !important; /* Texto negro */
+  color: #202124;
+}
+
+/* Estilo para el placeholder gris suave */
+.search-input::placeholder {
+  color: #9aa0a6;
+  opacity: 1;
 }
 
 .search-icon-left { color: #9aa0a6; font-size: 20px; }
+.search-icons-group { display: flex; align-items: center; gap: 12px; }
 .mic-icon, .camera-icon {
   font-size: 24px;
   cursor: pointer;
@@ -168,6 +188,13 @@
   height: 36px;
   font-size: 14px;
   cursor: pointer;
+  transition: border 0.1s, box-shadow 0.1s;
+}
+.btn:hover {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
 }
 
 .lang-offered { font-size: 13px; margin-top: 25px; color: #4d5156; }
@@ -182,4 +209,11 @@
 }
 .links-side { display: flex; padding: 15px 10px; }
 .links-side a { text-decoration: none; color: #70757a; margin: 0 12px; }
+.links-side a:hover { text-decoration: underline; }
+
+@media (max-width: 584px) {
+  .logo { font-size: 60px; }
+  .search-container { padding: 0 20px; }
+  .main-content { padding-top: 5vh; }
+}
 </style>

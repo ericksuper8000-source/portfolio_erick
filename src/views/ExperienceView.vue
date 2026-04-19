@@ -8,11 +8,18 @@
         
         <div class="search-box-container">
           <div class="search-box">
-            <input type="text" value="Experiencia laboral de Erick Pérez" readonly />
+            <span class="material-symbols-outlined search-icon-left">search</span>
+            
+            <input 
+              type="text" 
+              class="search-input"
+              value="Erick Pérez — Desarrollador DevOps & QA" 
+              readonly 
+            />
+            
             <div class="search-icons-group">
               <span class="material-symbols-outlined mic-icon">mic</span>
               <span class="material-symbols-outlined camera-icon">camera_alt</span>
-              <span class="material-symbols-outlined search-icon-btn">search</span>
             </div>
           </div>
         </div>
@@ -27,11 +34,11 @@
 
       <nav class="search-tabs">
         <div class="tabs-inner">
-          <div class="tab">Todo</div>
-          <div class="tab active">Experiencia</div>
-          <div class="tab">Imágenes</div>
-          <div class="tab">Vídeos</div>
-          <div class="tab">Más</div>
+          <div class="tab active">Todo</div>
+          <div class="tab">Images</div>
+          <div class="tab">Videos</div>
+          <div class="tab">Maps</div>
+          <div class="tab">More</div>
         </div>
       </nav>
     </header>
@@ -140,7 +147,7 @@ const experiences = [
     company: "Busco Trabajo",
     period: "ago. 2012 - jul. 2021 (9 años)",
     role: "CEO - Founder",
-    description: "Plataforma para la búsqueda y oferta laboral, conectando personas del mismo rubro a través de Internet para trabajar juntas. (Ubicación: Rosario, Argentina)"
+    description: "Plataforma para la búsqueda y oferta laboral, con más de 10 años de trayectoria conectando personas del mismo rubro. (Ubicación: Rosario, Argentina)"
   },
   {
     company: "Wedoo (Birtum)",
@@ -179,10 +186,40 @@ const experiences = [
 .g-blue { color: #4285f4; } .g-red { color: #ea4335; } .g-yellow { color: #fbbc05; } .g-green { color: #34a853; }
 
 .search-box-container { flex-grow: 1; max-width: 692px; }
-.search-box { display: flex; align-items: center; border: 1px solid #dfe1e5; border-radius: 24px; padding: 0 14px 0 20px; height: 44px; }
-.search-box input { border: none; outline: none; flex-grow: 1; font-size: 16px; background: transparent; }
+.search-box { 
+  display: flex; 
+  align-items: center; 
+  border: 1px solid #dfe1e5; 
+  border-radius: 24px; 
+  padding: 0 14px 0 18px; 
+  height: 44px; 
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
+.search-icon-left { 
+  color: #9aa0a6; 
+  font-size: 20px; 
+  margin-right: 10px;
+}
+
+.search-input { 
+  border: none; 
+  outline: none; 
+  flex-grow: 1; 
+  font-size: 16px; 
+  background: transparent; 
+  color: #202124 !important;
+  font-family: Arial, sans-serif;
+}
+
+.search-icons-group { display: flex; align-items: center; gap: 12px; }
+.mic-icon, .camera-icon { font-size: 24px; cursor: pointer; color: #4285f4; }
+
+.user-actions { margin-left: auto; display: flex; align-items: center; gap: 20px; }
 .avatar { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; }
+.apps-icon { color: #5f6368; cursor: pointer; }
+
 .search-tabs { padding: 0 5%; margin-top: 20px; margin-left: 135px; }
 .tabs-inner { display: flex; gap: 25px; color: #70757a; font-size: 14px; }
 .tab.active { color: #1a73e8; border-bottom: 3px solid #1a73e8; padding-bottom: 12px; }
@@ -203,9 +240,10 @@ const experiences = [
 .url-path { color: #4d5156; }
 .more-icon { color: #70757a; font-size: 18px; cursor: pointer; }
 .result-title { font-size: 20px; color: #1a0dab; font-weight: 400; margin: 0 0 4px 0; }
+.result-title:hover { text-decoration: underline; cursor: pointer; }
 .result-description { font-size: 14px; line-height: 1.58; color: #4d5156; }
 
-/* PAGINACIÓN COORDINADA */
+/* PAGINACIÓN */
 .pagination-wrapper { margin: 60px 0; display: flex; justify-content: center; }
 .pagination-content { display: inline-block; position: relative; }
 .pagination-letters { font-family: 'Product Sans', sans-serif; font-size: 34px; font-weight: bold; display: flex; justify-content: center; margin-bottom: 2px; }

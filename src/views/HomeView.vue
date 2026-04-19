@@ -1,193 +1,185 @@
 <template>
-  <div class="google-home-clean">
-    <header class="home-header">
-      <div class="nav-links left-nav">
-        <router-link to="/sobre-erick" class="nav-link">Sobre Erick</router-link>
-        <router-link to="/proyectos" class="nav-link">Proyectos</router-link>
+  <div class="home-wrapper">
+    <nav class="top-nav">
+      <div class="nav-side nav-left">
+        <router-link to="/sobre-erick" class="nav-link">About Erick</router-link>
+        <router-link to="/proyectos" class="nav-link">Latest Projects</router-link>
       </div>
-
-      <div class="nav-links right-nav">
-        <a href="https://linkedin.com/in/erick-perez" target="_blank" class="nav-link">LinkedIn</a>
-        <a href="https://github.com/erick-perez" target="_blank" class="nav-link">GitHub</a>
+      <div class="nav-side nav-right">
+        <a href="https://github.com/erickperez" target="_blank" class="nav-link">Github</a>
+        <a href="https://linkedin.com/in/erickperez" target="_blank" class="nav-link">Linkedin</a>
         <span class="material-symbols-outlined apps-icon">apps</span>
-        
-        <router-link to="/sobre-erick" class="avatar-link">
-          <img src="../assets/ME.jpg" class="avatar" alt="Erick Pérez" title="Perfil de Erick" />
+        <router-link to="/sobre-erick">
+          <img src="../assets/ME.jpg" class="avatar" alt="Erick Pérez" />
         </router-link>
       </div>
-    </header>
+    </nav>
 
     <main class="main-content">
-      <div class="logo-container">
-        <span class="g-blue">E</span><span class="g-red">r</span><span class="g-yellow">i</span><span class="g-blue">c</span><span class="g-green-logo">k</span>
+      <div class="logo">
+        <span class="g-blue">E</span><span class="g-red">r</span><span class="g-yellow">i</span><span class="g-blue">c</span><span class="g-green">k</span>
       </div>
 
-      <div class="search-wrapper">
-        <div class="search-bar">
-          <span class="material-symbols-outlined search-icon">search</span>
-          
+      <div class="search-container">
+        <div class="search-box">
+          <span class="material-symbols-outlined search-icon-left">search</span>
           <input 
             type="text" 
-            v-model="searchQuery" 
-            @keyup.enter="handleSearch"
-            placeholder="Buscar en Erick Google o escribir una URL"
+            class="search-input" 
+            @keyup.enter="$router.push('/proyectos')"
           />
-
-          <div class="search-tools">
-            <div class="tool-icon">
-              <svg viewBox="0 0 24 24"><path fill="#4285f4" d="m12 15c1.66 0 3-1.34 3-3v-4c0-1.66-1.34-3-3-3s-3 1.34-3 3v4c0 1.66 1.34 3 3 3z"></path><path fill="#34a853" d="m11 18.92v-2.04c-3.37-.21-6-3.01-6-6.38h2c0 2.76 2.24 5 5 5s5-2.24 5-5h2c0 3.37-2.63 6.17-6 6.38v2.04h-2z"></path></svg>
-            </div>
-            <div class="tool-icon">
-              <svg viewBox="0 0 24 24"><path fill="#4285f4" d="m19.25 4h-2.12c-.22 0-.42-.11-.53-.3l-.84-1.38c-.34-.58-.97-.92-1.65-.92h-4.22c-.68 0-1.3.34-1.65.92l-.84 1.38c-.11.19-.31.3-.53.3h-2.12c-1.38 0-2.5 1.12-2.5 2.5v11c0 1.38 1.12 2.5 2.5 2.5h14.5c1.38 0 2.5-1.12 2.5-2.5v-11c0-1.38-1.12-2.5-2.5-2.5z"></path><path fill="#ea4335" d="m12 18c-2.48 0-4.5-2.02-4.5-4.5s2.02-4.5 4.5-4.5 4.5 2.02 4.5 4.5-2.02 4.5-4.5 4.5zm0-7c-1.38 0-2.5 1.12-2.5 2.5s1.12 2.5 2.5 2.5 2.5-1.12 2.5-2.5-1.12-2.5-2.5-2.5z"></path></svg>
-            </div>
+          <div class="search-icons-group">
+            <span class="material-symbols-outlined mic-icon">mic</span>
+            <span class="material-symbols-outlined camera-icon">camera_alt</span>
           </div>
         </div>
 
-        <div class="button-group">
-          <button @click="handleSearch">Buscar con Erick</button>
-          <button @click="handleSearch">Voy a tener suerte</button>
+        <div class="buttons-container">
+          <button class="btn" @click="$router.push('/proyectos')">Erick Search</button>
+          <button class="btn" @click="$router.push('/mis-proyectos')">I'm Feeling Lucky</button>
         </div>
+      </div>
+
+      <div class="lang-offered">
+        Erick offered in: <a href="#">English (United States)</a>
       </div>
     </main>
 
     <footer class="home-footer">
-      <div class="footer-row">
-        <span>Costa Rica</span>
-      </div>
-      <div class="footer-row links">
-        <div class="f-left">
-          <a href="#">Publicidad</a>
-          <a href="#">Negocios</a>
+      <div class="location">Costa Rica</div>
+      <div class="footer-links">
+        <div class="links-side">
+          <router-link to="/sobre-erick">Who I am</router-link>
+          <router-link to="/experiencia">Experience</router-link>
+          <router-link to="/proyectos">Projects</router-link>
         </div>
-        <div class="f-right">
-          <a href="#">Privacidad</a>
-          <a href="#">Condiciones</a>
+        <div class="links-side">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Settings</a>
         </div>
       </div>
     </footer>
   </div>
 </template>
 
-<script setup>
-import { ref } from 'vue';
-import { useRouter } from 'vue-router';
-
-const searchQuery = ref('');
-const router = useRouter();
-
-const handleSearch = () => {
-  // Ahora manejamos la navegación a la página de proyectos
-  router.push('/proyectos');
-};
-</script>
-
 <style scoped>
-.google-home-clean {
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
+/* Mantenemos tu estilo intacto, solo forzamos limpieza visual */
+.home-wrapper {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff !important;
-  font-family: 'Roboto', Arial, sans-serif !important;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: white !important;
 }
 
-.home-header {
-  height: 60px;
+.top-nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
+  padding: 6px 15px;
+  height: 60px;
 }
 
-.nav-links { display: flex; align-items: center; gap: 15px; }
-.nav-link { 
-  text-decoration: none; 
-  color: #3c4043 !important; 
+.nav-side {
+  display: flex;
+  align-items: center;
+  gap: 15px;
   font-size: 13px;
-  cursor: pointer;
+  flex: 1;
+}
+
+.nav-right { justify-content: flex-end; }
+.nav-left { justify-content: flex-start; }
+
+.nav-link, a { 
+  text-decoration: none; 
+  color: #202124; 
 }
 .nav-link:hover { text-decoration: underline; }
 
-.avatar { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; cursor: pointer; }
-.apps-icon { color: #5f6368 !important; cursor: pointer; margin: 0 10px; }
+.apps-icon { color: #5f6368; cursor: pointer; padding: 8px; border-radius: 50%; }
+.avatar { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; margin-left: 8px; cursor: pointer; }
 
 .main-content {
-  flex-grow: 1;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 10vh;
 }
 
-.logo-container {
-  font-family: 'Product Sans', Arial, sans-serif !important;
-  font-size: 90px;
+.logo {
+  font-size: 92px;
   font-weight: 500;
-  letter-spacing: -4px;
-  margin-bottom: 30px;
-  user-select: none;
+  margin-bottom: 28px;
+  font-family: 'Product Sans', Arial, sans-serif;
+  letter-spacing: -2px;
 }
-.g-blue { color: #4285f4; } .g-red { color: #ea4335; } .g-yellow { color: #fbbc05; } .g-green-logo { color: #34a853; }
+.g-blue { color: #4285f4; } .g-red { color: #ea4335; } .g-yellow { color: #fbbc05; } .g-green { color: #34a853; }
 
-.search-wrapper {
-  width: 100%;
-  max-width: 584px;
+.search-container { 
+  width: 100%; 
+  max-width: 584px; 
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.search-bar {
+.search-box {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 46px;
-  border: 1px solid #dfe1e5 !important;
+  border: 1px solid #dfe1e5;
   border-radius: 24px;
-  padding: 0 15px;
-  background-color: #ffffff !important;
+  padding: 0 14px;
+  height: 46px;
+  background: white;
+}
+.search-box:hover { box-shadow: 0 1px 6px rgba(32,33,36,0.28); border-color: transparent; }
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #202124 !important; /* Texto negro */
 }
 
-.search-bar:hover { box-shadow: 0 1px 6px rgba(32,33,36,0.28); }
-
-.search-icon { color: #9aa0a6 !important; margin-right: 10px; }
-.search-bar input {
-  flex-grow: 1;
-  border: none !important;
-  outline: none !important;
-  font-size: 16px !important;
-  background: transparent !important;
-  color: #202124 !important;
+.search-icon-left { color: #9aa0a6; font-size: 20px; }
+.mic-icon, .camera-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: #4285f4;
 }
 
-.search-bar input::placeholder { color: #9aa0a6 !important; }
+.buttons-container {
+  margin-top: 28px;
+  display: flex;
+  gap: 12px;
+}
 
-.search-tools { display: flex; gap: 12px; }
-.tool-icon { width: 24px; height: 24px; cursor: pointer; }
-
-.button-group { margin-top: 30px; display: flex; gap: 12px; }
-.button-group button {
-  background-color: #f8f9fa !important;
-  border: 1px solid #f8f9fa !important;
+.btn {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
   border-radius: 4px;
-  color: #3c4043 !important;
-  font-size: 14px;
+  color: #3c4043;
   padding: 0 16px;
   height: 36px;
+  font-size: 14px;
   cursor: pointer;
 }
 
-.button-group button:hover {
-  border: 1px solid #dadce0 !important;
-  color: #202124 !important;
-}
+.lang-offered { font-size: 13px; margin-top: 25px; color: #4d5156; }
+.lang-offered a { color: #1a0dab; text-decoration: none; margin-left: 5px; }
 
-.home-footer {
-  margin-top: auto;
-  background-color: #f2f2f2 !important;
-  color: #70757a;
+.home-footer { background: #f2f2f2; color: #70757a; font-size: 14px; margin-top: auto; }
+.location { padding: 15px 30px; border-bottom: 1px solid #dadce0; }
+.footer-links { 
+  display: flex; 
+  justify-content: space-between; 
+  padding: 0 20px; 
 }
-.footer-row { padding: 15px 30px; border-bottom: 1px solid #dadce0; }
-.footer-row.links { display: flex; justify-content: space-between; border: none; }
-.footer-row a { text-decoration: none; color: #70757a !important; font-size: 14px; margin-right: 20px; }
+.links-side { display: flex; padding: 15px 10px; }
+.links-side a { text-decoration: none; color: #70757a; margin: 0 12px; }
 </style>

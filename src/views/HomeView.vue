@@ -15,8 +15,8 @@ onMounted(() => {
         <router-link to="/proyectos" class="nav-link">Latest Projects</router-link>
       </div>
       <div class="nav-side nav-right">
-        <a href="https://github.com/erickperez" target="_blank" class="nav-link">Github</a>
-        <a href="https://linkedin.com/in/erickperez" target="_blank" class="nav-link">Linkedin</a>
+        <a href="https://github.com/ericksuper8000-source" target="_blank" class="nav-link">Github</a>
+        <a href="https://www.linkedin.com/in/erick-perez88" target="_blank" class="nav-link">Linkedin</a>
         <span class="material-symbols-outlined apps-icon">apps</span>
         <router-link to="/sobre-erick">
           <img src="../assets/ME.jpg" class="avatar" alt="Erick Pérez" />
@@ -35,7 +35,7 @@ onMounted(() => {
           <input 
             type="text" 
             class="search-input" 
-            placeholder="Buscar en Erick o ingresar un texto"
+            placeholder="Search for Erick or enter text"
             @keyup.enter="$router.push('/proyectos')"
           />
           <div class="search-icons-group">

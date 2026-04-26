@@ -35,10 +35,10 @@
       <nav class="search-tabs">
         <div class="tabs-inner">
           <div class="tab active">Todo</div>
-          <div class="tab">Imágenes</div>
+          <div class="tab">Images</div>
           <div class="tab">Vídeos</div>
-          <div class="tab">Mapas</div>
-          <div class="tab">Más</div>
+          <div class="tab">Maps</div>
+          <div class="tab">More</div>
         </div>
       </nav>
     </header>
@@ -130,7 +130,7 @@
               </div>
               <span class="url-text">https://linkedin.com › in › erickperez</span>
             </div>
-            <a href="https://linkedin.com/in/erickperez" target="_blank" class="result-title">Erick Pérez - LinkedIn Profile</a>
+            <a href="https://www.linkedin.com/in/erick-perez88/" target="_blank" class="result-title">Erick Pérez - LinkedIn Profile</a>
             <p class="result-description">
               Connect with Erick on LinkedIn to explore a professional profile featuring recommendations, a growing network within the IT industry, and regular updates on projects, skills, and career progress. Stay up to date with his journey across Email Marketing, QA, and emerging DevOps and software development expertise.
             </p>
@@ -155,18 +155,45 @@
           </div>
           <div class="card-body">
             <h2 class="profile-name">Erick Pérez</h2>
-            <p class="profile-subtitle">Jr Python & FastAPI Developer | QA & Email Marketing Specialist | DevOps Learner (Docker, CI/CD, AWS)</p>
+            <p class="profile-subtitle">Jr Python & FastAPI Developer | SQL/NoSQL & Git | QA & Email Marketing Specialist | DevOps Learner (Docker, CI/CD, AWS)</p>
             <div class="divider"></div>
             <p class="desc-text">
-              Coupon / Email Marketing and QA Specialist with 5+ years of experience leading data-driven campaigns for international brands including Disney, Wells Fargo, and The New York Times.<br><br> Skilled in CMS platforms, testing automation, and cross-regional collaboration, and recognized for precision, innovation, and delivering zero-error campaigns. <br><br>Additionally, a junior Python developer with a growing focus on DevOps practices, including CI/CD pipelines, Docker, SQL and NoSQL databases, FastAPI, AWS, and Linux, bringing a strong blend of marketing expertise and technical capability to build efficient, scalable, and reliable solutions.
+              Erick Pérez is a Costa Rican backend developer based in Cartago, with over five years of experience in the tech industry. He has held roles such as Data Fraud Analyst, CRM Administrator, QA Specialist, and Junior Front-End Developer, building a strong foundation in software development and systems analysis.
+
+He is defined by his continuous evolution toward backend development, combining technical and analytical skills to create efficient, high-impact solutions.
             </p>
             <div class="divider"></div>
             <div class="profile-info">
-              <p><strong>Location:</strong> San Jose, Costa Rica</p>
+              <p><strong>Birth:</strong> Feb 8, 1989 (37 years old), San Jose, Costa Rica</p>
+              <p><strong>Degrees:</strong> Carrera Ing Dev-Ops (In-progress) | Aws Practicioner (In-progresss) | Técnico En Diseño De Páginas Web</p>
+              <p><strong>Soft skills:</strong> Effective communication, teamwork, problem-solving, adaptability, and flexibility</p>
+              <p><strong>Languages:</strong> Spanish (native) – English (intermediate)</p>
+              <p><strong>Interests:</strong> Programming, technology, reading, tattooing, traveling</p>
+              <p><strong>Favorite quote:</strong> "There’s always another perspective—and another way to do things better."</p>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="social-profiles-container">
+              <a href="https://github.com/ericksuper8000-source" target="_blank" class="social-icon-link">
+                <img src="../assets/Github.webp" alt="Github" class="social-icon">
+              </a>
+              <a href="https://gitlab.com/ericksuper80" target="_blank" class="social-icon-link">
+                <img src="../assets/Gitlab.webp" alt="Gitlab" class="social-icon">
+              </a>
+              <a href="https://www.linkedin.com/in/erick-perez88/" target="_blank" class="social-icon-link">
+                <img src="../assets/linkedin.png" alt="Linkedin" class="social-icon">
+              </a>
+            </div>
+
+            <div class="divider"></div>
+            <div class="profile-info">
+              <p><strong>Location:</strong> Cartago, Costa Rica</p>
               <p><strong>Role:</strong> Developer Junior / Python Artist</p>
             </div>
           </div>
         </aside>
+
       </div>
     </main>
   </div>
@@ -236,6 +263,7 @@
 .result-title { font-size: 20px; color: #1a0dab; text-decoration: none; display: block; margin-bottom: 4px; line-height: 1.3; }
 .result-title:hover { text-decoration: underline; }
 .result-description { font-size: 14px; line-height: 1.58; color: #4d5156; }
+
 .pagination-wrapper { margin: 60px 0 40px 0; display: flex; justify-content: center; }
 .pagination-content { display: inline-block; position: relative; }
 .pagination-letters, .pagination-numbers { display: flex; justify-content: center; }
@@ -245,6 +273,7 @@
 .num.active { color: #202124; font-weight: bold; cursor: default; }
 .num.link { color: #1a73e8; cursor: pointer; }
 .next-text { position: absolute; right: -75px; top: 40px; color: #1a73e8; font-size: 13px; cursor: pointer; }
+
 .knowledge-card { border: 1px solid #dadce0; border-radius: 8px; overflow: hidden; height: fit-content; }
 .main-card-img { width: 100%; height: 300px; object-fit: cover; }
 .card-body { padding: 20px; }
@@ -252,6 +281,23 @@
 .profile-subtitle { color: #70757a; font-size: 16px; }
 .divider { height: 1px; background: #dadce0; margin: 15px 0; }
 .profile-info p { font-size: 14px; margin-bottom: 8px; }
+
+/* Estilos para los iconos sociales */
+.social-profiles-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 5px 0;
+}
+.social-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+.social-icon:hover {
+  transform: scale(1.1);
+}
 
 @media (max-width: 991px) {
   .content-grid { grid-template-columns: 1fr; }

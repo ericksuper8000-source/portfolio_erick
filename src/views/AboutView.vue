@@ -13,7 +13,7 @@
             <input 
               type="text" 
               class="search-input"
-              value="Erick Pérez — Desarrollador DevOps & QA" 
+              value="Erick Pérez — Senior DevOps & Quality Engineering Specialist" 
               readonly 
             />
             
@@ -32,10 +32,10 @@
 
       <nav class="search-tabs">
         <div class="tabs-inner">
-          <div class="tab active">Todo</div>
+          <div class="tab active">All</div>
           <div class="tab">Images</div>
           <div class="tab">Videos</div>
-          <div class="tab">Maps</div>
+          <div class="tab">News</div>
           <div class="tab">More</div>
         </div>
       </nav>
@@ -45,46 +45,68 @@
       <div class="content-grid">
         
         <section class="results-list history-section">
-          <p class="results-stats">Cerca de 9 resultados (0.38 segundos)</p>
+          <p class="results-stats">About 1,992 results (0.42 seconds)</p>
 
           <div class="bio-snippet">
             <div class="result-url-row">
-              <span class="url-text">Erick Pérez › Biografía › 1992 - Presente</span>
+              <span class="url-text">erickperez.dev › about › profile</span>
             </div>
-            <h1 class="main-title">Quién soy</h1>
+            <h1 class="main-title">Erick Pérez: Who I Am</h1>
             <p class="desc-text">
-              Soy **Erick Pérez**, nacido el 02/04/1992 en Rosario, Santa Fe, Argentina. Soy un apasionado de la programación, el fútbol y el pádel. En el año 2018 decidí mudarme a España, pasando primero por Barcelona y luego por Sevilla, y tras varios años en el viejo continente, decidí volver a mi querida Rosario.
+              Experienced Senior QA Specialist with over 5 years of expertise in high-scale marketing ecosystems, currently pivoting into DevOps Engineering. Having delivered zero-error deployments for global brands like Disney and Wells Fargo, I am now applying my automation mindset to CI/CD orchestration, Docker containerization, and AWS cloud infrastructure. Beyond the terminal, I am a realism tattoo artist and a dedicated literature enthusiast who values precision in both code and art.
             </p>
           </div>
 
           <div class="bio-snippet">
             <div class="result-url-row">
-              <span class="url-text">Erick Pérez › Perfil › Autodidacta</span>
+              <span class="url-text">erickperez.dev › career › tech-stack</span>
             </div>
-            <h2 class="sub-title">Emprendedor y Autodidacta</h2>
+            <h2 class="sub-title">Senior Quality Assurance Specialist — Expertise in Scale</h2>
             <p class="desc-text">
-              Me defino como una persona emprendedora, autodidacta y dinámica, donde le gusta estar en constante movimiento buscando nuevos retos y desafíos. Durante mi vida pude concretar algunos proyectos que me permitieron ir adentrándome en las nuevas tecnologías y la programación, descubriendo así que lo que realmente me apasionaba era sentarme frente a la pantalla y crear código.
+              Beyond technical execution, I believe project success relies on seamless team communication. I have a proven ability to manage multiple production streams while keeping clients and stakeholders aligned through visual, goal-oriented reporting. By translating technical performance into business-driven insights and keeping internal documentation sharp for training, I ensure that every finding becomes a stepping stone for the next big milestone.
             </p>
           </div>
 
           <div class="bio-snippet">
             <div class="result-url-row">
-              <span class="url-text">Erick Pérez › Trayectoria › Google Adsense</span>
+              <span class="url-text">erickperez.dev › projects › portfolio-orchestrator</span>
             </div>
-            <h2 class="sub-title">Raíces Digitales (Adsense & Webs)</h2>
+            <h2 class="sub-title">The Art of Precision: Beyond the Terminal</h2>
             <p class="desc-text">
-              Desde los 15 años que estoy metido en el mundo de Internet, creando mis propias páginas web y blogs diseñados para trabajar con Google Adsense, modelo de negocio que me permitió trabajar de esta forma durante muchos años y dar mis primeros pasos en el mundo IT.
+              As a realism tattoo artist and academic illustrator, I dedicate my personal time to the pursuit of perfection and detail. For me, art is the bridge between technical precision and human storytelling. This passion allows me to maintain a healthy professional balance while developing the ability to listen and connect with people from all walks of life—a skill that is vital for effective team collaboration and understanding the 'why' behind every project.
             </p>
           </div>
 
           <div class="bio-snippet">
             <div class="result-url-row">
-              <span class="url-text">Erick Pérez › Carrera › Metas 2026</span>
+              <span class="url-text">erickperez.dev › life › interests</span>
             </div>
-            <h2 class="sub-title">Objetivo Profesional</h2>
+            <h2 class="sub-title">Coffee, Thrillers, and a Rabbit Named Ponyo</h2>
             <p class="desc-text">
-              Mi objetivo es consolidarme como un gran programador y seguir aprendiendo día a día para estar actualizado de las nuevas tendencias y tecnologías. Te invito a que sigas recorriendo mi CV para que puedas conocerme completamente.
+              Let’s be real: life is better with a bit of mystery and a lot of imagination. When I’m not debugging or architecting pipelines, you’ll find me lost in a Stephen King multiverse, debating Harry Potter lore, or exploring the complex worlds of Neil Gaiman and Isaac Asimov. I’m a firm believer that a well-told story is the best fuel for a creative mind. Oh, and if you want to talk about how the discipline of academic drawing makes me a more focused engineer (or just want to see pictures of my rabbit), I’m always down for a chat!
             </p>
+          </div>
+
+          <div class="personal-carousel-container">
+            <h3 class="carousel-title">Inside the Lab & Studio</h3>
+            <div class="carousel-track">
+              <div class="carousel-item">
+                <img src="../assets/Viajes.jpg" alt="Travel" />
+                <span>Traveling With My Family</span>
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/Viajes2.jpg" alt="Pet" />
+                <span>Traveling CR</span>
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/Viajes3.jpg" alt="Reading" />
+                <span>I love the beach</span>
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/Viajes4.jpg" alt="Nature" />
+                <span>Love Nature</span>
+              </div>
+            </div>
           </div>
 
           <div class="pagination-wrapper">
@@ -103,29 +125,30 @@
         <aside class="knowledge-card art-card">
           <div class="card-image-header art-gallery">
             <div class="gallery-grid">
-              <img src="../assets/tatuaje-pikachu.jpeg" alt="Pikachu Erick" class="gallery-img" />
-              <img src="../assets/tatuaje-enfermera.jpeg" alt="Lobo Erick" class="gallery-img" />
-              <img src="../assets/tatuaje-demonio.jpeg" alt="Retrato Erick" class="gallery-img" />
-              <img src="../assets/tatuaje-barba.jpeg" alt="Barba Erick" class="gallery-img" />
+              <img src="../assets/Viajes4.jpg" alt="Pikachu" class="gallery-img" />
+              <img src="../assets/tatuaje-enfermera.jpeg" alt="Wolf" class="gallery-img" />
+              <img src="../assets/Viajes6.jpg" alt="Portrait" class="gallery-img" />
+              <img src="../assets/Viajes5.jpg" alt="Beard" class="gallery-img" />
             </div>
-            <span class="gallery-label">Prácticas en piel sintética</span>
+            <span class="gallery-label">Portfolio: Realistic Shading, Pets & Costa Rica</span>
           </div>
           
           <div class="card-body">
             <h2 class="profile-name">Erick Pérez</h2>
-            <p class="profile-subtitle">Programador | Artista | Tatuador</p>
+            <p class="profile-subtitle">Jr. DevOps Engineer | QA Specialist | Artist</p>
             <div class="divider"></div>
             
             <p class="desc-text artist-quote">
-              "Programar y tatuar comparten la misma esencia: la precisión y la creación de algo perdurable. La lógica del código y la creatividad del arte son mi motor."
+              "In both DevOps and Tattooing, there is no room for error. It's about precision, scalability, and leaving a lasting mark of quality."
             </p>
             
             <div class="divider"></div>
             
             <div class="profile-info">
-              <p><strong>Especialidad:</strong> Backend & Sombreado Realista.</p>
-              <p><strong>Pasiones:</strong> Código limpio, Naturaleza, Tinta.</p>
-              <p><strong>Ubicación:</strong> Rosario, Argentina.</p>
+              <p><strong>Specialty:</strong> CI/CD Pipelines & Realistic Art.</p>
+              <p><strong>Cloud:</strong> AWS Certified Practitioner (Candidate).</p>
+              <p><strong>Current Stack:</strong> Python, Docker, GitLab, Linux.</p>
+              <p><strong>Location:</strong> Costa Rica.</p>
             </div>
           </div>
         </aside>
@@ -141,6 +164,7 @@
   color: #202124;
   background: white;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* HEADER */
@@ -249,8 +273,19 @@
 .bio-snippet { margin-bottom: 35px; }
 
 .main-title { font-size: 28px; font-weight: 400; color: #202124; margin-bottom: 2px; }
-.sub-title { font-size: 20px; font-weight: 400; color: #1a0dab; margin-bottom: 4px; cursor: pointer; }
-.sub-title:hover { text-decoration: underline; }
+
+/* MODIFICACIÓN AQUÍ: Quitamos cursor pointer y hover underline */
+.sub-title { 
+  font-size: 20px; 
+  font-weight: 400; 
+  color: #1a0dab; 
+  margin-bottom: 4px; 
+  cursor: default; /* Cambiado de pointer a default */
+}
+.sub-title:hover { 
+  text-decoration: none; /* Quitamos el subrayado */
+}
+
 .desc-text { font-size: 14px; line-height: 1.58; color: #4d5156; }
 
 .knowledge-card { border: 1px solid #dadce0; border-radius: 8px; overflow: hidden; height: fit-content; margin-top: 55px; }
@@ -266,6 +301,15 @@
 .divider { height: 1px; background: #dadce0; margin: 15px 0; }
 .artist-quote { font-style: italic; border-left: 3px solid #dfe1e5; padding-left: 15px; }
 
+/* ESTILOS DEL CARRUSEL */
+.personal-carousel-container { margin-top: 20px; border-top: 1px solid #ebebeb; padding-top: 20px; }
+.carousel-title { font-size: 18px; font-weight: 400; margin-bottom: 15px; }
+.carousel-track { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 15px; }
+.carousel-item { flex: 0 0 180px; display: flex; flex-direction: column; gap: 8px; text-align: center; }
+.carousel-item img { width: 100%; height: 120px; object-fit: cover; border-radius: 8px; border: 1px solid #dfe1e5; }
+.carousel-item span { font-size: 13px; color: #4d5156; }
+
+/* PAGINACIÓN */
 .pagination-wrapper { margin: 60px 0 40px 0; display: flex; justify-content: center; }
 .pagination-content { display: inline-block; position: relative; }
 .pagination-letters, .pagination-numbers { display: flex; justify-content: center; }
@@ -278,11 +322,22 @@
 .pagination-numbers { font-size: 13px; font-family: Arial, sans-serif; margin-top: -5px; }
 .num.active { color: #202124; font-weight: bold; cursor: default; }
 .num.link { color: #1a73e8; cursor: pointer; }
-.next-text { position: absolute; right: -75px; top: 40px; color: #1a73e8; font-size: 13px; cursor: pointer; }
+.next-text { position: absolute; right: -75px; top: 40px; color: #1a73e8; font-size: 13px; cursor: pointer; white-space: nowrap; }
 
+/* --- RESPONSIVENESS --- */
 @media (max-width: 991px) {
   .content-grid { grid-template-columns: 1fr; }
   .history-section, .search-tabs, .pagination-wrapper { margin-left: 0; }
   .sobre-mi-container { padding-top: 20px !important; }
+  .header-content { flex-wrap: wrap; justify-content: center; gap: 15px; }
+  .brand-logo { font-size: 24px; }
+  .next-text { position: static; display: block; text-align: center; margin-top: 10px; }
+}
+
+@media (max-width: 480px) {
+  .main-title { font-size: 24px; }
+  .pagination-letters { font-size: 28px; }
+  .pagination-letters span, .pagination-numbers .num { width: 20px; }
+  .carousel-item { flex: 0 0 140px; }
 }
 </style>

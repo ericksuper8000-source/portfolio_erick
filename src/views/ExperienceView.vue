@@ -13,7 +13,7 @@
             <input 
               type="text" 
               class="search-input"
-              value="Erick Pérez — Desarrollador DevOps & QA" 
+              value="Erick Pérez — Jr. DevOps Engineer & Quality Specialist" 
               readonly 
             />
             
@@ -34,7 +34,7 @@
 
       <nav class="search-tabs">
         <div class="tabs-inner">
-          <div class="tab active">Todo</div>
+          <div class="tab active">All</div>
           <div class="tab">Images</div>
           <div class="tab">Videos</div>
           <div class="tab">Maps</div>
@@ -47,7 +47,7 @@
       <div class="content-grid">
         
         <section class="results-list">
-          <p class="results-stats">Cerca de 9 resultados (0.38 segundos)</p>
+          <p class="results-stats">Close to 9 results (0.38 seconds)</p>
 
           <div v-for="(job, index) in experiences" :key="index" class="result-item">
             <div class="result-header">
@@ -97,18 +97,35 @@
             <img src="../assets/ME.jpg" alt="Erick Pérez" class="main-card-img">
           </div>
           <div class="card-body">
-            <h2 class="profile-name">Erick Pérez</h2>
-            <p class="profile-subtitle">Programador y Senior QA</p>
-            <div class="divider"></div>
-            <p class="desc-text">
-              Erick cuenta con una sólida trayectoria internacional, habiendo liderado equipos de consultoría y gestión de proyectos en Argentina y España.
-            </p>
+            <h2 class="profile-name">Erick Pérez - My Journey</h2>
+            <p class="profile-subtitle">Jr. DevOps Engineer & Quality Specialist</p>
+<div class="divider"></div>
+
+<p class="desc-text">
+  <strong>Professional Journey</strong><br><br>
+
+  My career has evolved from <strong>customer-facing roles</strong> into technically driven positions focused on 
+  <strong>data, systems, and quality</strong>. I began in financial services supporting North American clients, 
+  developing a solid foundation in problem-solving and handling complex, high-impact scenarios.<br><br>
+
+  I then transitioned into <strong>technical support</strong> for gaming and consumer technology, strengthening my ability to 
+  troubleshoot <strong>system-level issues</strong> in fast-paced environments. This experience led me into 
+  <strong>fraud detection</strong>, where I built a data-driven mindset centered on pattern recognition, risk analysis, 
+  and informed decision-making.<br><br>
+
+  Building on this, I moved into <strong>marketing technology</strong>, working with 
+  <strong>data pipelines, API integrations, and global campaign operations</strong>. Over time, my role evolved toward 
+  engineering practices—designing QA frameworks, validating complex workflows, and improving process efficiency.<br><br>
+
+  <strong>Today</strong>, I focus on delivering reliable, end-to-end solutions by combining 
+  <strong>technical execution, data validation, and performance optimization</strong>.
+</p>
             <div class="divider"></div>
             <div class="profile-info">
-              <p><strong>Total experiencia:</strong> +13 años</p>
-              <p><strong>Especialidad:</strong> Backend & Project Management</p>
-              <p><strong>Ubicación actual:</strong> Rosario, Argentina</p>
-            </div>
+				<p><strong>Total experience:</strong> 10+ years</p>
+				<p><strong>Specialization:</strong> QA Engineering, Data Operations & DevOps (in transition)</p>
+				<p><strong>Current location:</strong> Costa Rica</p>
+			</div>
           </div>
         </aside>
 
@@ -120,58 +137,52 @@
 <script setup>
 const experiences = [
   {
-    company: "Nanobytes",
-    period: "nov. 2024 - ene. 2026 (1 año y 2 meses)",
-    role: "Odoo Developer",
-    description: "Mi camino como programador comienza aquí. Desde desarrollo de módulos hasta bug fixes, en Nanobytes soy parte del área de Desarrollo, donde damos soporte técnico a decenas de clientes día a día. (Ubicación: Granada, España)"
+    company: "Catalina Marketing",
+    period: "Nov 2023 – Dec 2025 (2 years 1 month)",
+    role: "Senior Campaign Specialist – Marketing Operations & Data Systems",
+    description: "Managed end-to-end execution of in-store and digital coupon campaigns, leveraging CMS and CRM platforms to deliver personalized, data-driven marketing solutions. Combined technical operations, data validation, and client collaboration to ensure reliable campaign delivery and measurable business impact."
   },
   {
-    company: "Factor Libre",
-    period: "jun. 2022 - mar. 2024 (1 año y 10 meses)",
-    role: "Project Manager - Odoo",
-    description: "Consultoría a empresas y gestión de proyectos, coordinando con distintas áreas. Parte del área de 'Pedidos' desarrollando mejoras para el sector de Compra y Venta. (Ubicación: Madrid, España)"
+    company: "Marigold (formerly Cheetah Digital)",
+    period: "Sep 2021 – Oct 2023 (2 years 1 month)",
+    role: "Senior Email QA Engineer (CQE) – Campaign Quality & Automation",
+    description: "Led quality assurance and validation processes for enterprise email marketing campaigns, ensuring accuracy, reliability, and high-performance delivery across complex data-driven systems. Focused on test design, automation, and process optimization in a production-like environment."
   },
   {
-    company: "GuadalTech",
-    period: "sept. 2021 - jun. 2022 (10 meses)",
-    role: "Project Business Analyst - Odoo",
-    description: "Gestor de proyectos y Consultor, llevando a cabo más de 10 proyectos, desde el proceso comercial hasta formación y soporte post salida a producción. (Ubicación: Sevilla, España)"
+    company: "Experian → Marigold (formerly Cheetah Digital)",
+    period: "Aug. 2020 - Aug. 2021 (1 year)",
+    role: "Email Marketing Specialist – Marketing Technology & Data Operations",
+    description: "Maintained continuity in role and responsibilities following the transition of the email marketing business unit from Experian to Marigold. Managed marketing technology operations and data-driven campaign execution for global clients, focusing on data integration, workflow optimization, and cross-platform coordination."
   },
   {
-    company: "Adhoc SA",
-    period: "sept. 2019 - ago. 2021 (2 años)",
-    role: "Consultant Team Leader - Odoo",
-    description: "Líder del equipo de Consultores, responsable de que los proyectos se desarrollen en tiempo y forma, manteniendo reuniones estratégicas con clientes. (Ubicación: Rosario, Argentina)"
+    company: "Experian CR",
+    period: "Oct. 2019 – Aug. 2020 (10 months)",
+    role: "Email Marketing Specialist – Marketing Technology & Data Operations",
+    description: "Managed marketing technology operations and data-driven campaign execution for global clients, focusing on data integration, workflow optimization, and cross-platform coordination. Played a key role in ensuring reliable data pipelines and high-quality campaign delivery across multiple regions."
   },
   {
-    company: "Busco Trabajo",
-    period: "ago. 2012 - jul. 2021 (9 años)",
-    role: "CEO - Founder",
-    description: "Plataforma para la búsqueda y oferta laboral, con más de 10 años de trayectoria conectando personas del mismo rubro. (Ubicación: Rosario, Argentina)"
+    company: "Western Union",
+    period: "Mar. 2016 - Feb. 2019 (2 years 11 months)",
+    role: "Fraud Detection Analyst – Digital Transactions & Risk Operations",
+    description: "Transitioned into a specialized role focused on digital fraud detection and risk analysis, supporting the identification and prevention of fraudulent activity across global online transactions. Analyzed customer profiles and transactional data to detect suspicious patterns, contributing to the protection of users and the integrity of financial systems."
   },
   {
-    company: "Wedoo (Birtum)",
-    period: "nov. 2018 - abr. 2019 (6 meses)",
-    role: "Project Manager - Odoo",
-    description: "Implantaciones completas, soporte funcional y técnico. Gestión de más de 10 proyectos tras emigrar a Barcelona. (Ubicación: Barcelona, España)"
+    company: "Concentrix",
+    period: "Jun. 2015 – Dec. 2015 (7 months)",
+    role: "Technical Support Specialist – Apple Ecosystem (Founding Team)",
+    description: "Selected as part of the founding team responsible for launching and scaling the technical support line for Apple products in Costa Rica, supporting U.S. customers across iPhone, Mac, Apple Watch, and Apple digital services. Played a key role in establishing support processes, troubleshooting standards, and knowledge-sharing practices in a newly formed operational environment."
   },
   {
-    company: "Adhoc SA",
-    period: "mar. 2014 - oct. 2018 (4 años y 8 meses)",
-    role: "Project Business Analyst - Odoo",
-    description: "De soporte a Consultor Senior, gestionando más de 50 implementaciones de principio a fin y capacitando en el ERP Odoo. (Ubicación: Rosario, Argentina)"
+    company: "Aegis (now Teleperformance",
+    period: "Apr. 2012 - Jan. 2015 (2 years and 9 months)",
+    role: "Technical Support Specialist – Gaming Platforms & Digital Services",
+    description: "Delivered advanced technical support for U.S.-based gaming platforms and digital retail partners, including Game Informer and GameStop, resolving issues related to user accounts, digital content, and platform access. Operated within a high-volume, systems-driven environment requiring analytical thinking, precision, and efficient issue resolution.y"
   },
   {
-    company: "Manos a la Obra",
-    period: "ago. 2013 - ene. 2015 (1 año y 6 meses)",
-    role: "Community Manager",
-    description: "Redacción de contenido, diseño del plan fotográfico y documental, y gestión de redes sociales (Facebook/Twitter). (Ubicación: Rosario, Argentina)"
-  },
-  {
-    company: "Sersomedia",
-    period: "ago. 2011 - ene. 2012 (6 meses)",
-    role: "Community Manager",
-    description: "Creación de contenido digital para diversas compañías, incluyendo revistas digitales y e-commerce de artículos para motos. (Ubicación: Rosario, Argentina)"
+    company: "Sykes (now Foundever)",
+    period: "Ago. 2011 - Feb. 2012 (6 months)",
+    role: "Customer Support Specialist – Banking Services",
+    description: "Delivered high-quality customer support for U.S. and Canadian clients on behalf of Bank of America, managing a wide range of banking inquiries including account management, transactions, and mortgage-related concerns. Acted as the primary point of contact, ensuring accurate, compliant, and customer-focused solutions in a fast-paced, high-volume environment."
   }
 ];
 </script>

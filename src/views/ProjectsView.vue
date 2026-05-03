@@ -13,7 +13,7 @@
             <input 
               type="text" 
               class="search-input" 
-              value="Proyectos y Repositorios de Erick Pérez" 
+              value="Erick Pérez's Projects And Repositories" 
               readonly 
             />
             
@@ -34,7 +34,7 @@
 
       <nav class="search-tabs">
         <div class="tabs-inner">
-          <div class="tab active">Todo</div>
+          <div class="tab active">All</div>
           <div class="tab">Images</div>
           <div class="tab">Vídeos</div>
           <div class="tab">Maps</div>
@@ -158,10 +158,20 @@
             <p class="profile-subtitle">Jr Python & FastAPI Developer | SQL/NoSQL & Git | QA & Email Marketing Specialist | DevOps Learner (Docker, CI/CD, AWS)</p>
             <div class="divider"></div>
             <p class="desc-text">
-              Erick Pérez is a Costa Rican backend developer based in Cartago, with over five years of experience in the tech industry. He has held roles such as Data Fraud Analyst, CRM Administrator, QA Specialist, and Junior Front-End Developer, building a strong foundation in software development and systems analysis.
+  <strong>About Me</strong><br><br>
 
-He is defined by his continuous evolution toward backend development, combining technical and analytical skills to create efficient, high-impact solutions.
-            </p>
+  Erick Pérez is a Costa Rican <strong>QA Engineer & Developer</strong> based in Cartago, with 
+  <strong>10+ years of experience</strong> across technical support, fraud analysis, marketing technology, 
+  and quality assurance.<br><br>
+
+  Throughout his career, he has taken on roles such as <strong>Fraud Analyst, CRM Specialist, QA Engineer</strong>, 
+  and <strong>Campaign Operations Specialist</strong>, building a strong foundation in 
+  <strong>systems analysis, data-driven decision-making, and process optimization</strong>.<br><br>
+
+  <strong>Today</strong>, he is focused on transitioning into <strong>Backend Development and DevOps</strong>, 
+  combining technical expertise with analytical thinking to design 
+  <strong>efficient, reliable, and scalable solutions</strong>.
+			</p>
             <div class="divider"></div>
             <div class="profile-info">
               <p><strong>Birth:</strong> Feb 8, 1989 (37 years old), San Jose, Costa Rica</p>

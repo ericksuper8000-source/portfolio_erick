@@ -13,7 +13,7 @@
             <input 
               type="text" 
               class="search-input"
-              value="Erick Pérez — Senior DevOps & Quality Engineering Specialist" 
+              value="Erick Pérez — Jr. DevOps Engineer & Quality Specialist" 
               readonly 
             />
             
@@ -35,7 +35,7 @@
           <div class="tab active">All</div>
           <div class="tab">Images</div>
           <div class="tab">Videos</div>
-          <div class="tab">News</div>
+          <div class="tab">Maps</div>
           <div class="tab">More</div>
         </div>
       </nav>
@@ -45,7 +45,7 @@
       <div class="content-grid">
         
         <section class="results-list history-section">
-          <p class="results-stats">About 1,992 results (0.42 seconds)</p>
+          <p class="results-stats">Close to 9 results (0.38 seconds)</p>
 
           <div class="bio-snippet">
             <div class="result-url-row">
@@ -234,9 +234,9 @@
 .tabs-inner { display: flex; gap: 25px; color: #70757a; font-size: 14px; }
 .tab.active { color: #1a73e8; border-bottom: 3px solid #1a73e8; padding-bottom: 12px; }
 
-/* CUERPO */
+/* CUERPO - CORREGIDO PARA ALINEACIÓN */
 .sobre-mi-container { 
-  padding: 0 5% 20px 5% !important;
+  padding: 30px 5% 20px 5% !important; /* Cambiado a 30px arriba para igualar a experienceview */
 }
 
 .content-grid { 
@@ -260,9 +260,10 @@
 
 .results-stats { 
   color: #70757a; 
-  font-size: 14px; 
-  padding-top: 15px;
+  font-size: 13px; /* Cambiado de 14px a 13px */
+  padding-top: 0; /* Eliminado el padding-top de 15px */
   margin-bottom: 25px;
+  opacity: 0.85; /* Añadido para igualar estilo */
 }
 
 .history-section { 
@@ -274,16 +275,15 @@
 
 .main-title { font-size: 28px; font-weight: 400; color: #202124; margin-bottom: 2px; }
 
-/* MODIFICACIÓN AQUÍ: Quitamos cursor pointer y hover underline */
 .sub-title { 
   font-size: 20px; 
   font-weight: 400; 
   color: #1a0dab; 
   margin-bottom: 4px; 
-  cursor: default; /* Cambiado de pointer a default */
+  cursor: default;
 }
 .sub-title:hover { 
-  text-decoration: none; /* Quitamos el subrayado */
+  text-decoration: none;
 }
 
 .desc-text { font-size: 14px; line-height: 1.58; color: #4d5156; }

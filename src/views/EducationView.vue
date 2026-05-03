@@ -13,7 +13,7 @@
             <input 
               type="text" 
               class="search-input"
-              value="Erick Pérez — Desarrollador DevOps & QA" 
+              value="Erick Pérez — Education & Certifications" 
               readonly 
             />
             
@@ -34,7 +34,7 @@
 
       <nav class="search-tabs">
         <div class="tabs-inner">
-          <div class="tab active">Todo</div>
+          <div class="tab active">All</div>
           <div class="tab">Images</div>
           <div class="tab">Videos</div>
           <div class="tab">Maps</div>
@@ -47,7 +47,7 @@
       <div class="content-grid">
         
         <section class="results-list">
-          <p class="results-stats">Cerca de 9 resultados (0.38 segundos)</p>
+          <p class="results-stats">Close to 9 results (0.38 seconds)</p>
 
           <div v-for="(job, index) in experiences" :key="index" class="result-item">
             <div class="result-header">

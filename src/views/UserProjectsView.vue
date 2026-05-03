@@ -13,7 +13,7 @@
             <input 
               type="text" 
               class="search-input"
-              value="Proyectos y Repositorios de Erick Pérez" 
+              value="Erick Pérez — Projects and Repositories" 
               readonly 
             />
             
@@ -34,7 +34,7 @@
 
       <nav class="search-tabs">
         <div class="tabs-inner">
-          <div class="tab active">Todo</div>
+          <div class="tab active">All</div>
           <div class="tab">Images</div>
           <div class="tab">Videos</div>
           <div class="tab">Maps</div>
@@ -47,7 +47,7 @@
       <div class="content-grid">
         
         <section class="results-list">
-          <p class="results-stats">Cerca de 15 resultados (0.45 segundos)</p>
+          <p class="results-stats">Close to 9 results (0.38 seconds)</p>
 
           <section class="result-item">
             <div class="result-url">

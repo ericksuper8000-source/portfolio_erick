@@ -97,8 +97,8 @@
             <img src="../assets/ME.jpg" alt="Erick Pérez" class="main-card-img">
           </div>
           <div class="card-body">
-            <h2 class="profile-name">Erick Pérez - My Journey</h2>
-            <p class="profile-subtitle">Jr. DevOps Engineer & Quality Specialist</p>
+            <h2 class="profile-name">Erick Pérez</h2>
+            <p class="profile-subtitle">Jr. DevOps Engineer | QA Specialist | Artist</p>
 <div class="divider"></div>
 
 <p class="desc-text">

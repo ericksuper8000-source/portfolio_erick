@@ -52,55 +52,55 @@
           <section class="result-item">
             <div class="result-url">
               <img src="https://www.google.com/s2/favicons?sz=64&domain=python.org" class="favicon" alt="">
-              <span class="url-text">https://erickperez.com › skills › backend</span>
+              <span class="url-text">https://erickperez.dev › skills › software-engineering</span>
             </div>
-            <h3 class="result-title">Desarrollo Backend: Python & FastAPI</h3>
+            <h3 class="result-title">Object-Oriented Programming (OOP) & Clean Code Architecture</h3>
             <p class="result-description">
-              Especialista en la creación de APIs robustas y escalables. Dominio avanzado de Python, frameworks modernos como FastAPI, y gestión de bases de datos SQL (PostgreSQL, MySQL) y NoSQL.
+              Solid understanding of advanced software design paradigms in Python. Proficient in SOLID principles, Abstraction, Encapsulation, and Dependency Injection. Deep architectural knowledge of complex object relationships including Composition, Hierarchical Inheritance, and Python's Multiple Inheritance (MRO). Experienced in writing idiomatic Python using Dunder Methods for custom object behavior.
             </p>
           </section>
 
           <section class="result-item">
             <div class="result-url">
               <img src="https://www.google.com/s2/favicons?sz=64&domain=docker.com" class="favicon" alt="">
-              <span class="url-text">https://erickperez.com › skills › devops</span>
+              <span class="url-text">https://erickperez.dev › skills › devops-infrastructure</span>
             </div>
-            <h3 class="result-title">DevOps, Docker y Linux (Debian)</h3>
+            <h3 class="result-title">Containerization & Linux Systems Administration</h3>
             <p class="result-description">
-              Experiencia en containerización con Docker, administración de servidores Linux y configuración de flujos CI/CD para automatizar el despliegue de aplicaciones.
+              Hands-on experience architecting multi-container environments. Proficient in crafting optimized Dockerfiles, managing multi-stage builds, and orchestrating local containers. Experienced in image management across Docker Hub, GitHub Packages (GHCR), and GitLab Container Registry. Confident navigating and configuring Ubuntu and Debian Linux distributions via CLI.
             </p>
           </section>
 
           <section class="result-item">
             <div class="result-url">
-              <img src="https://www.google.com/s2/favicons?sz=64&domain=erickperez.com" class="favicon" alt="">
-              <span class="url-text">https://erickperez.com › skills › qa-testing</span>
+              <img src="https://www.google.com/s2/favicons?sz=64&domain=gitlab.com" class="favicon" alt="">
+              <span class="url-text">https://erickperez.dev › skills › cicd-quality-automation</span>
             </div>
-            <h3 class="result-title">Senior Quality Assurance (QA)</h3>
+            <h3 class="result-title">Continuous Integration & Automated Quality Gates</h3>
             <p class="result-description">
-              Más de una década de experiencia en aseguramiento de calidad, metodologías de prueba, y validación técnica para empresas de alto nivel en EE.UU.
+              Designing automated workflows to enforce code health and accelerate delivery lifecycles. Capable of building foundational CI/CD pipelines that trigger automated test suites (PyTest), code formatters (Black), and static analysis linters. Focused on shifting quality and software reliability to the left before final artifact assembly.
             </p>
           </section>
 
           <section class="result-item">
             <div class="result-url">
-              <img src="https://www.google.com/s2/favicons?sz=64&domain=cheetahdigital.com" class="favicon" alt="">
-              <span class="url-text">https://erickperez.com › skills › email-marketing</span>
+              <img src="https://www.google.com/s2/favicons?sz=64&domain=fastapi.tiangolo.com" class="favicon" alt="">
+              <span class="url-text">https://erickperez.dev › skills › backend-databases</span>
             </div>
-            <h3 class="result-title">Email Marketing & Campaign Management</h3>
+            <h3 class="result-title">RESTful API Design & Polyglot Database Management</h3>
             <p class="result-description">
-              Implementación técnica de campañas masivas, segmentación de audiencias y optimización de flujos de trabajo en plataformas empresariales.
+              Building high-performance, asynchronous backend services using FastAPI. Experienced in data modeling, basic query optimization, and structural data operations for both Relational (SQL) and Non-Relational (NoSQL) database paradigms, ensuring data schema integrity and strict request validation layers.
             </p>
           </section>
 
           <section class="result-item">
             <div class="result-url">
-              <img src="https://www.google.com/s2/favicons?sz=64&domain=instagram.com" class="favicon" alt="">
-              <span class="url-text">https://erickperez.com › skills › art-design</span>
+              <img src="https://www.google.com/s2/favicons?sz=64&domain=aws.amazon.com" class="favicon" alt="">
+              <span class="url-text">https://erickperez.dev › skills › agile-cloud</span>
             </div>
-            <h3 class="result-title">Arte del Tatuaje: Realismo y Blackwork</h3>
+            <h3 class="result-title">Agile Frameworks & Cloud Practitioner Strategy</h3>
             <p class="result-description">
-              Habilidades creativas avanzadas aplicadas al diseño de tatuajes con enfoque en realismo dinámico, composición y técnicas de dotwork/blackwork.
+              Actively adopting modern workflow management and cloud infrastructure paradigms. Deeply familiar with Scrum Fundamentals including development sprints, core ceremonies, and cross-functional roles. Currently preparing for the AWS Certified Cloud Practitioner credential to architect scalable, secure cloud environments.
             </p>
           </section>
 
@@ -123,21 +123,23 @@
           </div>
           <div class="card-body">
             <h2 class="profile-name">Erick Pérez</h2>
-            <p class="profile-subtitle">Stack Tecnológico</p>
+            <p class="profile-subtitle">Jr. DevOps Engineer | QA Specialist | Artist</p>
             <div class="divider"></div>
             <div class="skills-tags">
-              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Python (OOP)</span>
               <span class="skill-tag">FastAPI</span>
               <span class="skill-tag">Docker</span>
-              <span class="skill-tag">SQL</span>
-              <span class="skill-tag">QA</span>
-              <span class="skill-tag">Linux</span>
-              <span class="skill-tag">CI/CD</span>
+              <span class="skill-tag">CI/CD Pipelines</span>
+              <span class="skill-tag">Linux (CLI)</span>
+              <span class="skill-tag">SQL & NoSQL</span>
+              <span class="skill-tag">SOLID</span>
+              <span class="skill-tag">Scrum</span>
+              <span class="skill-tag">AWS (Candidate)</span>
             </div>
             <div class="divider"></div>
             <div class="profile-info">
-              <p><strong>Idiomas:</strong> Español (Nativo), Inglés (Profesional)</p>
-              <p><strong>Aptitudes clave:</strong> Resolución de problemas, Arquitectura de Software, Creatividad Artística.</p>
+              <p><strong>Languages:</strong> Spanish (Native), English (Professional)</p>
+              <p><strong>Key Strengths:</strong> Code Quality Automation, Software Design Paradigms, Systems Thinking.</p>
             </div>
           </div>
         </aside>

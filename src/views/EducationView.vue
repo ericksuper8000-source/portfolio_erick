@@ -98,16 +98,16 @@
           </div>
           <div class="card-body">
             <h2 class="profile-name">Erick Pérez</h2>
-            <p class="profile-subtitle">Programador y Senior QA</p>
+            <p class="profile-subtitle">Jr. DevOps Engineer | QA Specialist | Artist</p>
             <div class="divider"></div>
             <p class="desc-text">
-              Erick cuenta con una sólida trayectoria internacional, habiendo liderado equipos de consultoría y gestión de proyectos en Argentina y España.
+              Erick applies a strong quality assurance automation mindset to cloud architecture and CI/CD development, balancing technical precision with rigorous visual execution.
             </p>
             <div class="divider"></div>
             <div class="profile-info">
-              <p><strong>Total experiencia:</strong> +13 años</p>
-              <p><strong>Especialidad:</strong> Backend & Project Management</p>
-              <p><strong>Ubicación actual:</strong> Rosario, Argentina</p>
+              <p><strong>Education:</strong> DevOps Engineering Degree (In Progress)</p>
+              <p><strong>Core Focus:</strong> Automation, Cloud Infrastructure & SDD</p>
+              <p><strong>Location:</strong> Costa Rica</p>
             </div>
           </div>
         </aside>
@@ -120,58 +120,58 @@
 <script setup>
 const experiences = [
   {
-    company: "Nanobytes",
-    period: "nov. 2024 - ene. 2026 (1 año y 2 meses)",
-    role: "Odoo Developer",
-    description: "Mi camino como programador comienza aquí. Desde desarrollo de módulos hasta bug fixes, en Nanobytes soy parte del área de Desarrollo, donde damos soporte técnico a decenas de clientes día a día. (Ubicación: Granada, España)"
+    company: "erickperez.dev › education › devops-engineering",
+    period: "Expected 2027",
+    role: "DevOps Engineering Degree — EducacionIT",
+    description: "Comprehensive technical program focusing on infrastructure automation, cloud architecture, and modern deployment lifecycles. Gaining hands-on expertise in CI/CD pipeline orchestration, containerization (Docker), and cloud infrastructure management."
   },
   {
-    company: "Factor Libre",
-    period: "jun. 2022 - mar. 2024 (1 año y 10 meses)",
-    role: "Project Manager - Odoo",
-    description: "Consultoría a empresas y gestión de proyectos, coordinando con distintas áreas. Parte del área de 'Pedidos' desarrollando mejoras para el sector de Compra y Venta. (Ubicación: Madrid, España)"
+    company: "erickperez.dev › credentials › ia-driven-development",
+    period: "Issued 2026",
+    role: "Advanced AI-Assisted Engineering & Spec-Driven Development — Big School",
+    description: "Intensive certification focused on modern software engineering methodologies leveraging state-of-the-art AI tooling. Mastered Spec-Driven Development (SDD) to architect flawless technical blueprints, optimize token budget allocation, and minimize technical debt. Hands-on experience orchestrating advanced AI workflows using Claude Code, context-aware autonomous agents, persistent memory layers, and NotebookLM for deep documentation ingestion."
   },
   {
-    company: "GuadalTech",
-    period: "sept. 2021 - jun. 2022 (10 meses)",
-    role: "Project Business Analyst - Odoo",
-    description: "Gestor de proyectos y Consultor, llevando a cabo más de 10 proyectos, desde el proceso comercial hasta formación y soporte post salida a producción. (Ubicación: Sevilla, España)"
+    company: "erickperez.dev › education › independent-study",
+    period: "Continuous Learning",
+    role: "Advanced Python & Desktop Applications — Independent Study",
+    description: "(80+ hours of combined theory & practice). Focus: Object-Oriented Programming (OOP), Data Validation, and GUI Development (Tkinter). Applied directly to building local software solutions with clean, structured architecture."
   },
   {
-    company: "Adhoc SA",
-    period: "sept. 2019 - ago. 2021 (2 años)",
-    role: "Consultant Team Leader - Odoo",
-    description: "Líder del equipo de Consultores, responsable de que los proyectos se desarrollen en tiempo y forma, manteniendo reuniones estratégicas con clientes. (Ubicación: Rosario, Argentina)"
+    company: "erickperez.dev › education › independent-study",
+    period: "Specialized Training",
+    role: "Relational Databases & SQL Design — Intensive Course",
+    description: "(20 hours). Focus: Database normalization, complex query optimization, and ensuring transactional data integrity across relational models."
   },
   {
-    company: "Busco Trabajo",
-    period: "ago. 2012 - jul. 2021 (9 años)",
-    role: "CEO - Founder",
-    description: "Plataforma para la búsqueda y oferta laboral, con más de 10 años de trayectoria conectando personas del mismo rubro. (Ubicación: Rosario, Argentina)"
+    company: "erickperez.dev › education › independent-study",
+    period: "Specialized Training",
+    role: "Backend Architecture with FastAPI — Specialized Course",
+    description: "(4 hours). Focus: High-performance RESTful API development, asynchronous routing, and implementing Spec-Driven Development (SDD) for seamless backend workflows."
   },
   {
-    company: "Wedoo (Birtum)",
-    period: "nov. 2018 - abr. 2019 (6 meses)",
-    role: "Project Manager - Odoo",
-    description: "Implantaciones completas, soporte funcional y técnico. Gestión de más de 10 proyectos tras emigrar a Barcelona. (Ubicación: Barcelona, España)"
+    company: "erickperez.dev › credentials › web-development-platzi",
+    period: "Issued 2021",
+    role: "Web Development Program — Escuela de Desarrollo Web Platzi",
+    description: "Intensive track covering modern web standards, semantic HTML5, responsive CSS architectures, and foundational JavaScript logic for building dynamic user interfaces."
   },
   {
-    company: "Adhoc SA",
-    period: "mar. 2014 - oct. 2018 (4 años y 8 meses)",
-    role: "Project Business Analyst - Odoo",
-    description: "De soporte a Consultor Senior, gestionando más de 50 implementaciones de principio a fin y capacitando en el ERP Odoo. (Ubicación: Rosario, Argentina)"
+    company: "erickperez.dev › credentials › database-analysis-platzi",
+    period: "Issued 2020",
+    role: "Relational Database Analysis & Design — Platzi",
+    description: "Specialized coursework focused on conceptual modeling, entity-relationship diagrams (ERD), relational algebra, and writing efficient SQL statements for data retrieval."
   },
   {
-    company: "Manos a la Obra",
-    period: "ago. 2013 - ene. 2015 (1 año y 6 meses)",
-    role: "Community Manager",
-    description: "Redacción de contenido, diseño del plan fotográfico y documental, y gestión de redes sociales (Facebook/Twitter). (Ubicación: Rosario, Argentina)"
+    company: "erickperez.dev › education › fidelitas-university",
+    period: "Issued 2014",
+    role: "Technical Degree in Web Page Design — Universidad Fidélitas",
+    description: "Professional technical program centered on web layout techniques, visual interface design principles, and optimizing digital assets for cross-browser web deployments."
   },
   {
-    company: "Sersomedia",
-    period: "ago. 2011 - ene. 2012 (6 meses)",
-    role: "Community Manager",
-    description: "Creación de contenido digital para diversas compañías, incluyendo revistas digitales y e-commerce de artículos para motos. (Ubicación: Rosario, Argentina)"
+    company: "erickperez.dev › education › computer-systems-engineering",
+    period: "Attended 2013",
+    role: "Computer Systems Engineering — Universidad Latina de Costa Rica",
+    description: "Foundational coursework in computer science, algorithmic logic, programming fundamentals, and discrete mathematics. (Undergraduate program, incomplete)."
   }
 ];
 </script>

@@ -177,7 +177,7 @@
               <p><strong>Birth:</strong> Feb 8, 1989 (37 years old), San Jose, Costa Rica</p>
               <p><strong>Degrees:</strong> Carrera Ing Dev-Ops (In-progress) | Aws Practicioner (In-progresss) | Técnico En Diseño De Páginas Web</p>
               <p><strong>Soft skills:</strong> Effective communication, teamwork, problem-solving, adaptability, and flexibility</p>
-              <p><strong>Languages:</strong> Spanish (native) – English (intermediate)</p>
+              <p><strong>Languages:</strong> Spanish (native) – English (intermediate) – French (basic)</p>
               <p><strong>Interests:</strong> Programming, technology, reading, tattooing, traveling</p>
               <p><strong>Favorite quote:</strong> "There’s always another perspective—and another way to do things better."</p>
             </div>

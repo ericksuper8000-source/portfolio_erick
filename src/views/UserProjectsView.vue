@@ -47,51 +47,62 @@
       <div class="content-grid">
         
         <section class="results-list">
-          <p class="results-stats">Close to 9 results (0.38 seconds)</p>
-
-          <section class="result-item">
-            <div class="result-url">
-              <img src="https://www.google.com/s2/favicons?sz=64&domain=github.com" class="favicon" alt="">
-              <span class="url-text">https://github.com › erickperez › omni-portfolio</span>
-            </div>
-            <a href="https://github.com/erickperez" target="_blank" class="result-title">
-              Omni-Portfolio Orchestrator - Centralización de Proyectos
-            </a>
-            <p class="result-description">
-              Herramienta diseñada para centralizar y visualizar proyectos de GitHub y GitLab en una sola interfaz. Implementada con arquitectura escalable y enfoque en visualización de datos.
-            </p>
-          </section>
-
-          <section class="result-item">
-            <div class="result-url">
-              <img src="https://www.google.com/s2/favicons?sz=64&domain=python.org" class="favicon" alt="">
-              <span class="url-text">https://erickperez.com › proyectos › automation-tools</span>
-            </div>
-            <h3 class="result-title">Scripts de Automatización para Ingeniería de Datos</h3>
-            <p class="result-description">
-              Desarrollo de herramientas internas en Python para optimizar flujos de trabajo de ingeniería, reduciendo tiempos de ejecución en tareas repetitivas mediante scripts y cron jobs.
-            </p>
-          </section>
+          <p class="results-stats">Close to 5 results (0.24 seconds)</p>
 
           <section class="result-item">
             <div class="result-url">
               <img src="https://www.google.com/s2/favicons?sz=64&domain=fastapi.tiangolo.com" class="favicon" alt="">
-              <span class="url-text">https://github.com › erickperez › backend-core</span>
+              <span class="url-text">erickperez.dev › projects › cloud-native-api</span>
             </div>
-            <h3 class="result-title">Estructura Base para Microservicios - FastAPI</h3>
+            <a href="https://github.com/erickperez" target="_blank" class="result-title">
+              Asynchronous FastAPI Service & Multi-Container Cloud Deployment
+            </a>
             <p class="result-description">
-              Template profesional de backend que incluye autenticación JWT, integración con bases de datos SQL y documentación automática, listo para despliegues con Docker.
+              Designed and developed a high-performance RESTful API using FastAPI coupled with a relational database layer. Containerized the entire ecosystem utilizing multi-stage Docker builds to reduce image attack surface and resource footprint. Successfully deployed the production-ready container to a cloud environment, ensuring robust routing and data persistence.
             </p>
           </section>
 
           <section class="result-item">
             <div class="result-url">
-              <img src="https://www.google.com/s2/favicons?sz=64&domain=debian.org" class="favicon" alt="">
-              <span class="url-text">https://erickperez.com › proyectos › infra-iac</span>
+              <img src="https://www.google.com/s2/favicons?sz=64&domain=github.com" class="favicon" alt="">
+              <span class="url-text">erickperez.dev › projects › automated-cicd-pipeline</span>
             </div>
-            <h3 class="result-title">Configuraciones de Infraestructura Debian-based</h3>
+            <h3 class="result-title">Continuous Integration & Delivery via GitHub Actions Architecture</h3>
             <p class="result-description">
-              Repositorio con configuraciones de hardening para servidores Linux, setups de contenedores y orquestación básica para entornos de desarrollo y staging.
+              Engineered a resilient CI/CD pipeline from scratch using GitHub Actions to enforce strict quality gates. The automated workflow triggers on push events to execute comprehensive unit testing suites, enforce formatting guidelines via Black, run static code analysis, and perform automated builds, seamlessly pushing verified artifacts to target environments without manual intervention.
+            </p>
+          </section>
+
+          <section class="result-item">
+            <div class="result-url">
+              <img src="https://www.google.com/s2/favicons?sz=64&domain=kubernetes.io" class="favicon" alt="">
+              <span class="url-text">erickperez.dev › projects › kubernetes-orchestration</span>
+            </div>
+            <h3 class="result-title">Microservices Orchestration Using Local Kubernetes Clusters</h3>
+            <p class="result-description">
+              Scaled containerized applications into high-availability environments by designing custom Kubernetes YAML manifests. Managed pod lifecycles, service routing, configuration maps, and local volume persistence. Orchestrated cluster deployments using Minikube, simulating enterprise-grade zero-downtime rolling updates and self-healing cluster behaviors.
+            </p>
+          </section>
+
+          <section class="result-item">
+            <div class="result-url">
+              <img src="https://www.google.com/s2/favicons?sz=64&domain=terraform.io" class="favicon" alt="">
+              <span class="url-text">erickperez.dev › projects › infrastructure-as-code</span>
+            </div>
+            <h3 class="result-title">Cloud Resource Provisioning & Automation via Terraform</h3>
+            <p class="result-description">
+              Embraced the Infrastructure as Code (IaC) paradigm by automating cloud architectures using Terraform. Authored modular declarative configuration files to provision secure networks, computing instances, and storage buckets. Eliminated configuration drift by managing state files securely, allowing predictable and repeatable infrastructure deployment.
+            </p>
+          </section>
+
+          <section class="result-item">
+            <div class="result-url">
+              <img src="https://www.google.com/s2/favicons?sz=64&domain=grafana.com" class="favicon" alt="">
+              <span class="url-text">erickperez.dev › projects › full-stack-observability</span>
+            </div>
+            <h3 class="result-title">Centralized Logging, Metrics & Cloud Monitoring Dashboard</h3>
+            <p class="result-description">
+              Implemented an enterprise-grade observability layer to guarantee system health and performance tracing. Configured real-time log aggregation and telemetry matrix collections. Integrated visualization tooling like Grafana to design interactive dashboards, allowing proactive bottleneck identification and infrastructure alerting based on live data traffic.
             </p>
           </section>
 
@@ -114,16 +125,16 @@
           </div>
           <div class="card-body">
             <h2 class="profile-name">Erick Pérez</h2>
-            <p class="profile-subtitle">Repositorios y Código</p>
+            <p class="profile-subtitle">Jr. DevOps Engineer | QA Specialist | Artist</p>
             <div class="divider"></div>
             <p class="desc-text">
-              Explora mi trabajo de código abierto y contribuciones técnicas en las plataformas de control de versiones líderes.
+              Explore my hands-on repositories focused on building predictable, automated, and observable cloud-native applications. My work covers the practical lifecycle of software delivery—from developing asynchronous APIs to provisioning infrastructure as code and orchestrating local containerized clusters.
             </p>
             <div class="divider"></div>
             <div class="profile-info">
               <p><strong>GitHub:</strong> github.com/erickperez</p>
               <p><strong>GitLab:</strong> gitlab.com/erickperez</p>
-              <p><strong>Lenguaje Principal:</strong> Python</p>
+              <p><strong>Core Stack:</strong> Python (FastAPI), Terraform, Kubernetes, Docker, GitHub Actions, Grafana, SQL (MySQL/PostgreSQL), NoSQL</p>
             </div>
           </div>
         </aside>

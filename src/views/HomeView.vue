@@ -97,7 +97,7 @@ function submitSearch() {
 .home-wrapper {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   font-family: Arial, sans-serif;
   background-color: white !important;
 }
@@ -234,5 +234,18 @@ function submitSearch() {
   .logo { font-size: 60px; }
   .search-container { padding: 0 20px; }
   .main-content { padding-top: 5vh; }
+  .top-nav { flex-wrap: wrap; gap: 4px 0; padding: 10px 12px; height: auto; }
+  .nav-side { gap: 10px; font-size: 12px; flex: 1 1 100%; justify-content: center; }
+  .nav-left { justify-content: center; }
+  .nav-right { justify-content: center; }
+  .buttons-container { flex-wrap: wrap; justify-content: center; }
+  .lang-offered { text-align: center; padding: 0 16px; line-height: 1.5; }
+  .footer-links { flex-direction: column; align-items: center; padding: 0 10px; }
+  .links-side { justify-content: center; padding: 8px 0; }
+  .location { text-align: center; padding: 12px 16px; }
+}
+
+@media (max-width: 380px) {
+  .logo { font-size: 46px; letter-spacing: -1px; }
 }
 </style>

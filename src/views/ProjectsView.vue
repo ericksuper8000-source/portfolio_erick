@@ -5,7 +5,7 @@
     <main class="results-container">
       <div class="content-grid">
         <section class="results-list">
-          <p class="results-stats">Close to 8 results (0.38 seconds)</p>
+          <p class="results-stats">Close to 9 results (0.38 seconds)</p>
 
           <section class="result-item">
             <div class="result-url-row">
@@ -52,8 +52,8 @@
             </router-link>
             <p class="result-description">
               DevOps Engineering program (EducacionIT, expected 2027), AWS Cloud Practitioner (in progress),
-              advanced Python (80+ hrs), SQL design (20 hrs), FastAPI training, plus Platzi and a technical degree
-              in web design.
+              Advanced AI-Assisted Engineering &amp; SDD (Big School), advanced Python (80+ hrs), SQL design (20 hrs),
+              FastAPI training, plus Platzi and a technical degree in web design.
             </p>
           </section>
 
@@ -69,7 +69,8 @@
             </router-link>
             <p class="result-description">
               Python (FastAPI, Pandas, pytest), PostgreSQL, Docker, CI/CD (GitHub Actions, GitLab CI), Linux/Debian,
-              AWS (in progress), plus 5+ years of QA & campaign operations.
+              AWS (in progress), plus 5+ years of QA &amp; campaign operations and hands-on AI-Assisted Engineering
+              (SDD, agents, LLM APIs, RAG fundamentals).
             </p>
           </section>
 
@@ -87,6 +88,22 @@
               Portfolio of real projects: API-Learning-Lab (FastAPI + PostgreSQL), WhatsApp Finance Assistant
               (FastAPI + Celery, 48 tests), CI/CD Pipeline Labs (GitHub Actions + GitLab CI + Docker),
               Linux DevOps Labs (Debian) and a Pandas/NumPy data analyzer.
+            </p>
+          </section>
+
+          <section class="result-item">
+            <div class="result-url-row">
+              <div class="favicon-container is-image">
+                <img :src="tattooVaca" alt="">
+              </div>
+              <span class="url-text">https://portfolioerickdev.netlify.app › life › art-of-precision</span>
+            </div>
+            <router-link to="/arte" class="result-title">
+              The Art of Precision – Realism Tattoo Work
+            </router-link>
+            <p class="result-description">
+              Realism tattoo artist and academic illustrator: pieces from the studio where detail, anatomy and
+              shading meet the same obsession with precision I bring to QA and clean pipelines.
             </p>
           </section>
 
@@ -143,12 +160,15 @@
         <KnowledgeCard :facts="cardFacts">
           <p class="desc-text about-text">
             <strong>About Me</strong><br /><br />
-            Erick Pérez is a Costa Rican <strong>QA Engineer & Developer</strong> based in
+            Erick Pérez is a Costa Rican <strong>QA Engineer &amp; Developer</strong> based in
             {{ profile.location }}, with <strong>10+ years of experience</strong> across technical support, fraud
             analysis, marketing technology and quality assurance.<br /><br />
             <strong>Today</strong>, he is focused on transitioning into <strong>Backend Development and DevOps</strong>,
             combining his QA discipline with Python (FastAPI), CI/CD and Docker to design
-            <strong>efficient, reliable, and scalable solutions</strong>.
+            <strong>efficient, reliable, and scalable solutions</strong>.<br /><br />
+            <strong>Proof over promises:</strong> a QA framework that cut campaign review time by
+            <strong>25%</strong>, a <strong>zero critical-error record</strong> across Fortune 500 campaigns, and
+            <strong>48 automated tests</strong> behind his flagship FastAPI project.
           </p>
         </KnowledgeCard>
 
@@ -162,6 +182,7 @@ import GoogleHeader from '../components/GoogleHeader.vue';
 import KnowledgeCard from '../components/KnowledgeCard.vue';
 import ResultPagination from '../components/ResultPagination.vue';
 import { profile } from '../data/content';
+import tattooVaca from '../assets/tatuaje-vaca.jpeg';
 
 const cardFacts = [
   { label: 'Birth', value: `${profile.birth} (37 years old), San José, Costa Rica` },

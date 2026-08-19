@@ -147,4 +147,16 @@ function clearSearch() {
   .brand-logo { font-size: 24px; }
   .search-box-container { max-width: 100%; }
 }
+
+@media (max-width: 600px) {
+  .search-header { padding-top: 14px; }
+  .header-content { padding: 0 12px; gap: 10px; row-gap: 12px; }
+  .brand-logo { order: 1; font-size: 22px; }
+  .user-actions { order: 2; margin-left: auto; gap: 12px; }
+  .search-box-container { order: 3; flex-basis: 100%; max-width: 100%; }
+  .search-box { height: 40px; }
+  .avatar { width: 28px; height: 28px; }
+  .search-tabs { margin-top: 10px; padding: 0 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .tabs-inner { gap: 18px; white-space: nowrap; }
+}
 </style>

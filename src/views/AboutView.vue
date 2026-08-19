@@ -16,6 +16,24 @@
             <p class="desc-text">
               {{ profile.bio }}
             </p>
+            <div class="stats-strip">
+              <div class="stat">
+                <span class="stat-value">10+</span>
+                <span class="stat-label">Years in Tech</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">30+</span>
+                <span class="stat-label">Brands served worldwide</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">3</span>
+                <span class="stat-label">Projects built with AI</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">5+</span>
+                <span class="stat-label">Years · Zero critical incidents</span>
+              </div>
+            </div>
           </div>
 
           <div class="bio-snippet">
@@ -36,9 +54,9 @@
 
           <div class="bio-snippet">
             <div class="result-url-row">
-              <span class="url-text">portfolioerickdev.netlify.app › projects › portfolio-orchestrator</span>
+              <span class="url-text">portfolioerickdev.netlify.app › life › art-of-precision</span>
             </div>
-            <h2 class="sub-title">The Art of Precision: Beyond the Terminal</h2>
+            <router-link to="/arte" class="sub-title">The Art of Precision: Beyond the Terminal</router-link>
             <p class="desc-text">
               As a realism tattoo artist and academic illustrator, I dedicate my personal time to the pursuit of
               perfection and detail. For me, art is the bridge between technical precision and human storytelling.
@@ -46,6 +64,7 @@
               listen and connect with people from all walks of life—a skill that is vital for effective team
               collaboration.
             </p>
+            <router-link to="/arte" class="teaser-link">Explore the studio gallery ›</router-link>
           </div>
 
           <div class="bio-snippet">
@@ -68,12 +87,13 @@
             <div class="related-pills">
               <router-link to="/curriculum" class="related-pill">Download my CV</router-link>
               <router-link to="/contacto" class="related-pill">Contact</router-link>
+              <router-link to="/arte" class="related-pill">Art of Precision</router-link>
               <router-link to="/proyectos" class="related-pill">All sections</router-link>
             </div>
           </div>
 
           <div class="personal-carousel-container">
-            <h3 class="carousel-title">Inside the Lab & Studio</h3>
+            <h3 class="carousel-title">Inside the Lab &amp; Studio</h3>
             <div class="carousel-track">
               <div class="carousel-item">
                 <img src="../assets/Viajes.jpg" alt="Travel" />
@@ -90,6 +110,14 @@
               <div class="carousel-item">
                 <img src="../assets/Viajes4.jpg" alt="Nature" />
                 <span>Love Nature</span>
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/Viajes5.jpg" alt="Family trip" />
+                <span>Family time</span>
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/Viajes6.jpg" alt="Adventure" />
+                <span>Always exploring</span>
               </div>
             </div>
           </div>
@@ -117,7 +145,7 @@ import { profile } from '../data/content';
 const aboutFacts = [
   { label: 'Specialty', value: 'QA & Test Automation, Backend APIs & Realistic Art.' },
   { label: 'Cloud', value: 'AWS Cloud Practitioner (in progress).' },
-  { label: 'Current Stack', value: 'Python, FastAPI, PostgreSQL, Docker, CI/CD (GitHub Actions, GitLab CI), Linux.' },
+  { label: 'Current Stack', value: 'Python, FastAPI, PostgreSQL, Docker, CI/CD (GitHub Actions, GitLab CI), Linux · SDD, AI Agents & LLM APIs.' },
   { label: 'Location', value: profile.location },
 ];
 </script>
@@ -200,16 +228,50 @@ const aboutFacts = [
 
 .personal-carousel-container { margin-top: 20px; border-top: 1px solid #ebebeb; padding-top: 20px; }
 .carousel-title { font-size: 18px; font-weight: 400; margin-bottom: 15px; }
-.carousel-track { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 15px; }
-.carousel-item { flex: 0 0 180px; display: flex; flex-direction: column; gap: 8px; text-align: center; }
+.carousel-track { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 15px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
+.carousel-item { flex: 0 0 180px; display: flex; flex-direction: column; gap: 8px; text-align: center; scroll-snap-align: start; }
 .carousel-item img { width: 100%; height: 120px; object-fit: cover; border-radius: 8px; border: 1px solid #dfe1e5; }
 .carousel-item span { font-size: 13px; color: #4d5156; }
+
+.stats-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 22px;
+}
+.stat {
+  background: #f8f9fa;
+  border: 1px solid #dadce0;
+  border-radius: 10px;
+  padding: 14px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  text-align: center;
+}
+.stat-value { font-size: 24px; font-weight: 500; color: #1a73e8; font-family: 'Roboto', Arial, sans-serif; }
+.stat-label { font-size: 12px; color: #5f6368; line-height: 1.3; }
+
+.teaser-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #1a0dab;
+  text-decoration: none;
+}
+.teaser-link:hover { text-decoration: underline; }
 
 @media (max-width: 991px) {
   .content-grid { grid-template-columns: 1fr; }
   .history-section { margin-left: 0; }
   .sobre-mi-container { padding-top: 20px; }
   .knowledge-card { margin-top: 30px; }
+}
+
+@media (max-width: 600px) {
+  .stats-strip { grid-template-columns: repeat(2, 1fr); }
+  .stat-value { font-size: 20px; }
 }
 
 @media (max-width: 480px) {

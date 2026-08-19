@@ -24,7 +24,7 @@
 import avatarImg from '../assets/ME.jpg';
 
 defineProps({
-  subtitle: { type: String, default: 'QA & Automation Analyst | Backend (FastAPI) & DevOps (in transition)' },
+  subtitle: { type: String, default: 'QA & Automation Analyst | Backend (FastAPI) & DevOps (in transition) | AI-Assisted Engineering' },
   facts: { type: Array, default: () => [] },
 });
 

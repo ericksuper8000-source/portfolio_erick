@@ -1,10 +1,21 @@
 <script setup>
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
+import { useRouter } from 'vue-router';
+import { profile } from '../data/content';
+
+const router = useRouter();
+const searchText = ref('');
 
 onMounted(() => {
-  // Cambia el texto de la pestaña del navegador
-  document.title = "Erick Perez - CV";
+  document.title = `Erick Pérez — ${profile.headline}`;
 });
+
+function submitSearch() {
+  const q = searchText.value.trim();
+  if (q) {
+    router.push({ path: '/buscar', query: { q } });
+  }
+}
 </script>
 
 <template>
@@ -15,9 +26,13 @@ onMounted(() => {
         <router-link to="/proyectos" class="nav-link">Latest Projects</router-link>
       </div>
       <div class="nav-side nav-right">
+        <router-link to="/curriculum" class="nav-link">Curriculum</router-link>
+        <router-link to="/contacto" class="nav-link">Contact</router-link>
         <a href="https://github.com/ericksuper8000-source" target="_blank" class="nav-link">Github</a>
         <a href="https://www.linkedin.com/in/erick-perez88" target="_blank" class="nav-link">Linkedin</a>
-        <span class="material-symbols-outlined apps-icon">apps</span>
+        <router-link to="/proyectos" title="Sections" class="nav-link">
+          <span class="material-symbols-outlined apps-icon">apps</span>
+        </router-link>
         <router-link to="/sobre-erick">
           <img src="../assets/ME.jpg" class="avatar" alt="Erick Pérez" />
         </router-link>
@@ -32,11 +47,12 @@ onMounted(() => {
       <div class="search-container">
         <div class="search-box">
           <span class="material-symbols-outlined search-icon-left">search</span>
-          <input 
-            type="text" 
-            class="search-input" 
+          <input
+            type="text"
+            class="search-input"
             placeholder="Search for Erick or enter text"
-            @keyup.enter="$router.push('/proyectos')"
+            v-model="searchText"
+            @keyup.enter="submitSearch"
           />
           <div class="search-icons-group">
             <span class="material-symbols-outlined mic-icon">mic</span>
@@ -45,28 +61,32 @@ onMounted(() => {
         </div>
 
         <div class="buttons-container">
-          <button class="btn" @click="$router.push('/proyectos')">Erick Search</button>
-          <button class="btn" @click="$router.push('/proyectos')">I'm Feeling Lucky</button>
+          <button class="btn" @click="submitSearch">Erick Search</button>
+          <button class="btn" @click="router.push('/sobre-erick')">I'm Feeling Lucky</button>
         </div>
       </div>
 
       <div class="lang-offered">
-        Erick offered in: <a href="#">English (United States)</a>
+        Erick offered in: <router-link to="/curriculum">English (United States)</router-link>
       </div>
     </main>
 
     <footer class="home-footer">
-      <div class="location">Costa Rica</div>
+      <div class="location">San José, Costa Rica</div>
       <div class="footer-links">
         <div class="links-side">
           <router-link to="/sobre-erick">Who I am</router-link>
           <router-link to="/experiencia">Experience</router-link>
-          <router-link to="/proyectos">Projects</router-link>
+          <router-link to="/educacion">Education</router-link>
+          <router-link to="/conocimientos">Skills</router-link>
+          <router-link to="/mis-proyectos">Projects</router-link>
+          <router-link to="/curriculum">Curriculum</router-link>
         </div>
         <div class="links-side">
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
-          <a href="#">Settings</a>
+          <router-link to="/contacto">Contact</router-link>
+          <a href="mailto:ericksuper80@hotmail.com">Email</a>
+          <a href="https://github.com/ericksuper8000-source" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/erick-perez88" target="_blank">LinkedIn</a>
         </div>
       </div>
     </footer>
@@ -100,9 +120,9 @@ onMounted(() => {
 .nav-right { justify-content: flex-end; }
 .nav-left { justify-content: flex-start; }
 
-.nav-link, a { 
-  text-decoration: none; 
-  color: #202124; 
+.nav-link, a {
+  text-decoration: none;
+  color: #202124;
 }
 .nav-link:hover { text-decoration: underline; }
 
@@ -126,9 +146,9 @@ onMounted(() => {
 }
 .g-blue { color: #4285f4; } .g-red { color: #ea4335; } .g-yellow { color: #fbbc05; } .g-green { color: #34a853; }
 
-.search-container { 
-  width: 100%; 
-  max-width: 584px; 
+.search-container {
+  width: 100%;
+  max-width: 584px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -145,9 +165,9 @@ onMounted(() => {
   background: white;
   transition: box-shadow 0.2s;
 }
-.search-box:hover { 
-  box-shadow: 0 1px 6px rgba(32,33,36,0.28); 
-  border-color: transparent; 
+.search-box:hover {
+  box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+  border-color: transparent;
 }
 
 .search-input {
@@ -159,7 +179,6 @@ onMounted(() => {
   color: #202124;
 }
 
-/* Estilo para el placeholder gris suave */
 .search-input::placeholder {
   color: #9aa0a6;
   opacity: 1;
@@ -202,12 +221,12 @@ onMounted(() => {
 
 .home-footer { background: #f2f2f2; color: #70757a; font-size: 14px; margin-top: auto; }
 .location { padding: 15px 30px; border-bottom: 1px solid #dadce0; }
-.footer-links { 
-  display: flex; 
-  justify-content: space-between; 
-  padding: 0 20px; 
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
 }
-.links-side { display: flex; padding: 15px 10px; }
+.links-side { display: flex; padding: 15px 10px; flex-wrap: wrap; }
 .links-side a { text-decoration: none; color: #70757a; margin: 0 12px; }
 .links-side a:hover { text-decoration: underline; }
 

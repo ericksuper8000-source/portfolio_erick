@@ -95,7 +95,7 @@ const cardFacts = [
 
 .result-item { margin-bottom: 20px; }
 .result-url-row { display: flex; align-items: center; margin-bottom: 4px; }
-.url-text { font-size: 14px; color: #4d5156; white-space: nowrap; }
+.url-text { font-size: 14px; color: #4d5156; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 .detail-title { font-size: 28px; font-weight: 400; color: #202124; margin: 0 0 2px 0; }
 .detail-meta { font-size: 14px; color: #70757a; margin: 0 0 14px 0; }

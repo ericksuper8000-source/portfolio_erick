@@ -180,6 +180,8 @@ const aboutFacts = [
   font-size: 14px;
   color: #4d5156;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .results-stats {

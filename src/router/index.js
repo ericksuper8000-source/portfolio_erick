@@ -15,6 +15,11 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue')
     },
     {
+      path: '/arte',
+      name: 'art',
+      component: () => import('../views/ArtView.vue')
+    },
+    {
       path: '/proyectos',
       name: 'projects-main', // La página principal tipo buscador / hub de secciones
       component: () => import('../views/ProjectsView.vue')

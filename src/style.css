@@ -1,7 +1,69 @@
 @import "tailwindcss";
 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 body {
-  background-color: black;
-  color: #4AF626; /* Verde terminal */
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  background-color: white;
+  color: #202124;
+  font-family: 'Roboto', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ============================================================
+   Responsive helpers (mobile) — aplican a todas las vistas
+   ============================================================ */
+@media (max-width: 640px) {
+  .results-container {
+    padding: 20px 16px;
+  }
+
+  .content-grid {
+    gap: 28px;
+  }
+
+  .results-stats {
+    margin-bottom: 18px;
+  }
+
+  .result-title {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .detail-title {
+    font-size: 24px;
+  }
+
+  .result-description,
+  .desc-text {
+    line-height: 1.55;
+  }
+
+  .main-card-img {
+    height: 220px;
+  }
+
+  .url-text {
+    min-width: 0;
+    max-width: 200px;
+  }
+
+  .related-pills {
+    gap: 8px;
+  }
+
+  .related-pill {
+    font-size: 12px;
+    padding: 5px 12px;
+  }
+
+  .mini-tag {
+    font-size: 10px;
+    padding: 2px 8px;
+  }
 }

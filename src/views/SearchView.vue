@@ -23,6 +23,8 @@
                 <router-link to="/buscar?q=CI/CD" class="related-pill">CI/CD</router-link>
                 <router-link to="/buscar?q=Campaign" class="related-pill">Campaign</router-link>
                 <router-link to="/buscar?q=curriculum" class="related-pill">Curriculum</router-link>
+                <router-link to="/buscar?q=AI Agents" class="related-pill">AI Agents</router-link>
+                <router-link to="/buscar?q=RAG" class="related-pill">RAG</router-link>
               </div>
             </div>
 
@@ -55,6 +57,8 @@
                 <router-link to="/buscar?q=PostgreSQL" class="related-pill">PostgreSQL</router-link>
                 <router-link to="/buscar?q=pytest" class="related-pill">pytest</router-link>
                 <router-link to="/buscar?q=contact" class="related-pill">Contact</router-link>
+                <router-link to="/buscar?q=SDD" class="related-pill">SDD</router-link>
+                <router-link to="/buscar?q=AI Agents" class="related-pill">AI Agents</router-link>
               </div>
             </div>
           </template>
@@ -73,7 +77,7 @@
 
         <KnowledgeCard :facts="searchFacts">
           <p class="desc-text">
-            Full-text search across experience, education, projects, skills, curriculum and contact information.
+            Full-text search across experience, education, projects, skills, art, curriculum and contact information.
           </p>
         </KnowledgeCard>
 
@@ -103,6 +107,7 @@ const typeLabel = {
   skill: 'Skill',
   curriculum: 'Curriculum',
   contact: 'Contact',
+  art: 'Art',
 };
 
 const typeIcon = {
@@ -113,10 +118,11 @@ const typeIcon = {
   skill: 'fas fa-cog',
   curriculum: 'fas fa-file-pdf',
   contact: 'fas fa-envelope',
+  art: 'fas fa-palette',
 };
 
 const searchFacts = [
-  { label: 'Search index', value: '7 experiences · 10 courses · 5 projects · 5 skills · 5 CVs' },
+  { label: 'Search index', value: '7 experiences · 10 courses · 5 projects · 6 skills · 5 CVs · 1 art' },
   { label: 'Location', value: profile.location },
   { label: 'Email', value: profile.email },
 ];

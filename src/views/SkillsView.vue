@@ -61,6 +61,10 @@ const tagList = [
   'Linux (Debian)',
   'Pandas & NumPy',
   'AWS (in progress)',
+  'SDD & AI Agents',
+  'LLM APIs (Whisper, GPT-4o-mini)',
+  'RAG fundamentals',
+  'Open-source LLMs (DeepSeek, Qwen, Kimi)',
 ];
 
 const cardFacts = [

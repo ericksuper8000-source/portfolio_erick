@@ -61,7 +61,7 @@ import { projects, profile } from '../data/content';
 const cardFacts = [
   { label: 'GitHub', value: profile.githubName },
   { label: 'GitLab', value: profile.gitlabName },
-  { label: 'Core Stack', value: 'Python (FastAPI, Pandas, Pydantic), PostgreSQL, Docker, GitHub Actions, GitLab CI, pytest' },
+  { label: 'Core Stack', value: 'Python (FastAPI, Pandas, Pydantic), PostgreSQL, Docker, GitHub Actions, GitLab CI, pytest, LLM APIs (Whisper, GPT-4o-mini)' },
 ];
 </script>
 

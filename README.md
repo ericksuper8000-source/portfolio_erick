@@ -1,45 +1,89 @@
-🔍 Erick Pérez - Omni-Portfolio Orchestrator
-A search engine within a portfolio
-This project is more than just a showcase of work; it is a User Interface (UI) and User Experience (UX) experiment that leverages the iconic Google Search aesthetic to organize a professional journey of over 10 years across Tech and Art.
+# 🔍 Erick Pérez — Omni-Portfolio Orchestrator
 
-🎯 The Objective
-The goal was to break away from the traditional "static portfolio" template. I wanted users not just to read my CV, but to interact with it in the most natural way possible: by searching. The mission is to prove that a senior developer can bridge the gap between technical precision and disruptive visual creativity.
+A **search engine as a portfolio**: a UI/UX experiment that leverages the iconic Google Search aesthetic to organize a professional journey of 10+ years across **Tech and Art**.
 
-🛠️ Tech Stack
-Framework: Vue.js 3 (Composition API)
+Instead of a traditional static portfolio, visitors *search* their way through Erick Pérez's experience, education, projects, skills, curriculum and contact info — in the most familiar interface on the planet.
 
-Build Tool: Vite (for ultra-fast development and bundling)
+## 🎯 The Objective
 
-Routing: Vue Router (implementing Lazy Loading and History Mode)
+Break away from the "static portfolio" template. Let users interact with the CV the way they naturally use the web: by searching. The mission is to prove that a senior developer can bridge technical precision and visual creativity — from QA discipline to FastAPI backends, CI/CD pipelines and realistic tattoo art.
 
-Styling: Native Scoped CSS3 with a mobile-first responsive approach.
+## 🛠️ Tech Stack
 
-Iconography: Google Material Symbols & custom local assets.
+| Layer | Tech |
+|---|---|
+| Framework | Vue 3 (Composition API, `<script setup>`) |
+| Build tool | Vite |
+| Routing | Vue Router 4 — History mode + Lazy Loading |
+| Styling | Scoped CSS3 + Tailwind CSS 4 (PostCSS) |
+| Iconography | Font Awesome 7 + Google Material Symbols |
+| Deployment | Netlify (SPA redirect via `netlify.toml`) |
 
-AI Integration: Developed with the assistance of cutting-edge LLMs (Gemini 3 Flash) for boilerplate generation and route logic optimization.
+## 🧠 Engineering & UX Decisions
 
-🧠 Engineering & UX Decisions
-1. The "Search Results" Interface
-I chose the Google search results structure because it is the most familiar interface on the planet. This significantly reduces cognitive load for the user: they know where to click, what to expect from a description, and instinctively understand the hierarchy of information.
+1. **The "Search Results" interface** — The Google results structure is the most familiar UI on earth. It reduces cognitive load: users know where to click, what to expect from a description, and instinctively understand the information hierarchy.
 
-2. Performance & Navigation
-Lazy Loading: Every section (About, Experience, Education) is only loaded when the user navigates to it. This keeps the initial load time under 400ms.
+2. **Performance & navigation** — Every section (About, Experience, Education, Projects, Skills, Curriculum, Contact) is lazy-loaded on demand. The build output is split per view; the home view ships first.
 
-Favicon Architecture: I implemented a hybrid logic. For external sites like GitHub or LinkedIn, I use the Google Favicon API. For internal sections, I use local assets (.png) to ensure visual consistency even before the site is fully indexed or deployed on a custom domain.
+3. **Full-text search** — `src/data/content.js` builds a searchable index across experience, education, projects, skills, CVs and contact. Search terms are matched across titles, descriptions and keywords.
 
-3. The "Human" Factor (The Knowledge Card)
-To the right of the search results, I implemented a "Knowledge Card." This was a strategic decision to balance professional content (left) with personal branding (right), keeping my profile picture and location visible without interrupting the reading flow.
+4. **The "Knowledge Card"** — A sidebar card balances professional content (left) with personal branding (right): profile picture, key facts and, in the About section, a personal carousel and a realism tattoo gallery.
 
-⏱️ Development Timeline
-Conceptualization & Structure: 1 day.
+5. **Favicon strategy** — Hybrid logic: Google Favicon API for external domains (GitHub, LinkedIn, FastAPI…), local assets for internal sections to guarantee visual consistency.
 
-Core Development (Search Engine & Routing): 2 days.
+## 📂 Project Structure
 
-UI/UX Refinement (Favicons, Pagination Alignment): 1 day.
+```
+src/
+├── main.js              # App bootstrap (Vue + Router + Font Awesome)
+├── App.vue              # Root wrapper
+├── style.css            # Global styles + mobile responsive helpers
+├── data/
+│   └── content.js       # Single source of truth: profile, data & search engine
+├── router/
+│   └── index.js         # 14 routes (home + lazy-loaded sections & details)
+├── components/
+│   ├── GoogleHeader.vue     # Sticky search header (logo + search box + tabs)
+│   ├── KnowledgeCard.vue    # Sidebar profile card
+│   └── ResultPagination.vue # Google-style "Eriiiiiick" pagination
+└── views/               # Section list views + detail views with related links
+    ├── HomeView.vue         # Google-home replica with search box
+    ├── SearchView.vue       # Full-text search results
+    ├── AboutView.vue        # Bio, stats, personal carousel & tattoo gallery
+    ├── ExperienceView.vue / ExperienceDetailView.vue
+    ├── EducationView.vue / EducationDetailView.vue
+    ├── SkillsView.vue / SkillDetailView.vue
+    ├── UserProjectsView.vue / ProjectDetailView.vue
+    ├── CurriculumView.vue   # ATS-friendly PDF downloads
+    └── ContactView.vue
+```
 
-Production Optimization: 1 day.
+## 🚀 Getting Started
 
-🤖 The Role of AI in this Project
-This project was developed in collaboration with Artificial Intelligence. It wasn't just used for text; it served as a pair programming partner.
+```bash
+npm install     # install dependencies
+npm run dev     # start dev server (Vite)
+npm run build   # production build
+npm run preview # preview the production build
+```
 
-Key Takeaway: While AI is excellent for prototyping complex CSS structures, human precision remains vital for fine details, such as the exact pixel alignment of the pagination (making sure numbers sit perfectly under the "Eriiiiiick" logo) and managing dynamic route states. I learned to iterate on technical prompts to achieve clean, maintainable code.
+## 🌐 Deployment
+
+Deployed on Netlify. `netlify.toml` rewrites all routes to `index.html` so deep links (e.g. `/experiencia/catalina`) work with Vue Router history mode.
+
+## 📄 Content
+
+All content lives in `src/data/content.js` and comes from real CVs (2026) — nothing is invented:
+- 7 experiences (Catalina, Cheetah Digital, Experian, Western Union, Concentrix, Aegis, Sykes)
+- 10 education items & certifications
+- 5 hands-on projects (FastAPI, Celery/Redis + LLM, CI/CD pipelines, Linux labs, Pandas)
+- 6 skills with related links (including **AI-Assisted Engineering**: SDD, agents, LLM APIs, RAG fundamentals, open-source models)
+- 5 ATS-friendly CVs in `public/cv/`
+
+## 🤖 The Role of AI
+
+This project was developed in collaboration with LLMs as a pair-programming partner. AI excels at prototyping complex CSS structures; human precision remains vital for fine details like pixel-aligned pagination and dynamic route states.
+
+---
+
+© 2026 Erick Pérez Gutiérrez · San José, Costa Rica

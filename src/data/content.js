@@ -7,8 +7,8 @@
 export const profile = {
   name: 'Erick Pérez Gutiérrez',
   shortName: 'Erick Pérez',
-  headline: 'QA & Automation Analyst | Backend (FastAPI) & DevOps (in transition)',
-  subtitle: 'QA & Automation Analyst | Backend (FastAPI) & DevOps (in transition)',
+  headline: 'QA & Automation Analyst | Backend (FastAPI) & DevOps (in transition) | AI-Assisted Engineering',
+  subtitle: 'QA & Automation Analyst | Backend (FastAPI) & DevOps (in transition) | AI-Assisted Engineering',
   location: 'San José, Costa Rica',
   phone: '+506 6064-6370',
   email: 'ericksuper80@hotmail.com',
@@ -28,8 +28,11 @@ export const profile = {
   bio:
     'QA & Automation Analyst with over 5 years validating high-volume enterprise systems for Fortune 500 brands ' +
     '(Disney, Wells Fargo, The New York Times, Starbucks) with a proven zero-critical-error record. Currently ' +
-    'pivoting into Backend Engineering with FastAPI and DevOps practices (CI/CD, Docker, AWS). ' +
-    'Beyond the terminal, realism tattoo artist and literature enthusiast who values precision in both code and art.',
+    'pivoting into Backend Engineering with FastAPI and DevOps practices (CI/CD, Docker, AWS). In parallel, I ' +
+    'build AI-assisted engineering skills hands-on: Spec-Driven Development (SDD), orchestrating autonomous ' +
+    'coding agents, LLM APIs with structured outputs (Whisper + GPT-4o-mini) and prompt precision evaluation, ' +
+    'while exploring open-source models (DeepSeek, Qwen, Kimi) and RAG fundamentals. Beyond the terminal, ' +
+    'realism tattoo artist and literature enthusiast who values precision in both code and art.',
 };
 
 // ---------------------------------------------------------------------
@@ -42,7 +45,7 @@ export const experiences = [
     company: 'Catalina Marketing',
     period: 'Nov 2023 – Dec 2025',
     duration: '2 years 1 month',
-    role: 'Senior Campaign Specialist & QA Validation',
+    role: 'Senior Campaign Specialist',
     location: 'Costa Rica',
     urlPath: 'experience › catalina-marketing',
     summary:
@@ -73,7 +76,7 @@ export const experiences = [
     company: 'Cheetah Digital',
     period: 'Sep 2021 – Oct 2023',
     duration: '2 years 1 month',
-    role: 'Email Marketing Senior CQE (Quality Engineering)',
+    role: 'CQE — QA Assurance Agent & Assurance Manager',
     location: 'Costa Rica',
     urlPath: 'experience › cheetah-digital',
     summary:
@@ -93,7 +96,7 @@ export const experiences = [
     ],
     tags: ['QA Framework', 'Test Design', 'pytest', 'Data Validation', 'Email Marketing', 'Automation'],
     related: [
-      { label: 'Catalina Marketing — QA Validation', to: '/experiencia/catalina' },
+      { label: 'Catalina Marketing — Senior Campaign Specialist', to: '/experiencia/catalina' },
       { label: 'QA & Test Automation', to: '/conocimientos/qa-automation' },
       { label: 'CI/CD Quality Gates', to: '/conocimientos/cicd-containers' },
     ],
@@ -104,7 +107,7 @@ export const experiences = [
     company: 'Experian',
     period: 'Oct 2019 – Aug 2020',
     duration: '10 months',
-    role: 'Email Marketing Specialist / QA Support',
+    role: 'Campaign Specialist',
     location: 'Costa Rica',
     urlPath: 'experience › experian',
     summary:
@@ -121,7 +124,7 @@ export const experiences = [
     ],
     tags: ['Data Mapping', 'API Integrations', 'QA', 'Data Validation', 'Fortune 500'],
     related: [
-      { label: 'Catalina Marketing — QA Validation', to: '/experiencia/catalina' },
+      { label: 'Catalina Marketing — Senior Campaign Specialist', to: '/experiencia/catalina' },
       { label: 'Cheetah Digital — Senior CQE', to: '/experiencia/cheetah-digital' },
       { label: 'Relational Databases & Data Integrity', to: '/conocimientos/databases' },
     ],
@@ -300,18 +303,23 @@ export const education = [
     title: 'Advanced AI-Assisted Engineering & Spec-Driven Development (SDD) — Big School',
     urlPath: 'education › spec-driven-development',
     summary:
-      'Certification focused on modern software engineering methodologies leveraging AI tooling and ' +
-      'Spec-Driven Development.',
+      'Certification focused on modern software engineering methodologies leveraging AI tooling, agents and Spec-Driven Development.',
     description:
       'Intensive certification focused on modern software engineering methodologies leveraging state-of-the-art ' +
       'AI tooling. Mastered Spec-Driven Development (SDD) to architect technical blueprints, optimize token budget ' +
-      'allocation and minimize technical debt, with hands-on experience orchestrating advanced AI workflows.',
+      'allocation and minimize technical debt, with hands-on experience orchestrating advanced AI workflows. ' +
+      'Applied in real portfolio projects: AI-agent workflows (AGENTS.md operating protocols), LLM APIs with ' +
+      'structured outputs and golden-set precision evaluation, RAG fundamentals (document ingestion and memory ' +
+      'layers for grounded responses), and cost-efficient experimentation with open-source models (DeepSeek, ' +
+      'Qwen, Kimi).',
     bullets: [
       'Spec-Driven Development (SDD): technical blueprint design and token-efficient architecture.',
-      'Advanced AI tooling and context-aware autonomous agents.',
-      'Persistent memory layers and deep documentation ingestion.',
+      'Orchestrating context-aware autonomous AI agents with bootstrap protocols (AGENTS.md).',
+      'RAG fundamentals: persistent memory layers and deep documentation ingestion for grounded responses.',
+      'LLM workflows: structured outputs, prompt tuning and golden-set precision evaluation.',
+      'Exploring open-source LLMs (DeepSeek, Qwen, Kimi) as cost-efficient alternatives.',
     ],
-    tags: ['SDD', 'AI Engineering', 'Architecture', 'Documentation'],
+    tags: ['SDD', 'AI Engineering', 'Agents', 'RAG', 'LLM', 'DeepSeek', 'Qwen', 'Kimi'],
     related: [
       { label: 'Backend Architecture with FastAPI', to: '/educacion/fastapi' },
       { label: 'API-Learning-Lab', to: '/mis-proyectos/api-learning-lab' },
@@ -498,17 +506,22 @@ export const projects = [
     repo: 'github.com/ericksuper8000-source/api-learning-lab',
     repoUrl: 'https://github.com/ericksuper8000-source/api-learning-lab',
     summary:
-      'REST API built with Python 3.11, FastAPI, Pydantic v2 and Uvicorn, with PostgreSQL CRUD and pytest quality gates.',
+      'REST API built with Python, FastAPI, Pydantic v2 and Uvicorn, with PostgreSQL CRUD and quality-gated CI — documented as a complete engineering journey.',
     description:
-      'Hands-on project for learning and demonstrating production-style backend development. The roadmap covers ' +
-      'PostgreSQL CRUD operations, automated quality gates with pytest, and continuous integration via GitHub ' +
-      'Actions + GitLab CI using mirrored repositories.',
+      'A documented engineering journey tracing the complete life of an API request — from a single HTTP call to ' +
+      'a row in PostgreSQL. Built as an IT Assets Inventory REST API (CRUD for laptops, servers, switches, ' +
+      'monitors, printers and licenses) with FastAPI, Pydantic v2 and Uvicorn. Persistence on PostgreSQL with ' +
+      'automatic OpenAPI/Swagger docs, and a quality-only CI pipeline (Pytest, Ruff, Black, Mypy, Bandit, ' +
+      'pip-audit) running on mirrored GitHub + GitLab repositories. The whole project runs under an AI-agent ' +
+      'workflow: an AGENTS.md operating manual with execution plans, ADRs, session logs and a daily recap ritual.',
     bullets: [
-      'REST API with Python 3.11, FastAPI, Pydantic v2 and Uvicorn.',
-      'PostgreSQL CRUD operations and relational data modeling.',
-      'pytest quality gates and CI via GitHub Actions + GitLab CI (mirrored repositories).',
+      'Complete API request lifecycle: client → HTTP → Uvicorn → FastAPI → PostgreSQL → response.',
+      'IT Assets Inventory REST API: CRUD for laptops, servers, switches, monitors, printers and licenses.',
+      'PostgreSQL persistence, relational modeling and Pydantic v2 validation with auto OpenAPI/Swagger docs.',
+      'Quality-only CI: Pytest, Ruff, Black, Mypy, Bandit and pip-audit on mirrored GitHub + GitLab.',
+      'Built with an AI-agent workflow: AGENTS.md bootstrap protocol, execution plan, ADRs and session logs (SDD-style).',
     ],
-    tags: ['FastAPI', 'Python', 'Pydantic', 'PostgreSQL', 'pytest', 'CI/CD'],
+    tags: ['FastAPI', 'Python', 'Pydantic', 'PostgreSQL', 'pytest', 'CI/CD', 'OpenAPI', 'AGENTS.md'],
     related: [
       { label: 'Backend Architecture with FastAPI', to: '/educacion/fastapi' },
       { label: 'Relational Databases & Data Integrity', to: '/conocimientos/databases' },
@@ -521,23 +534,27 @@ export const projects = [
     iconDomain: 'github.com',
     name: 'WhatsApp Finance Assistant (caja-chica-bot)',
     urlPath: 'projects › caja-chica-bot',
-    repo: 'github.com/ericksuper8000-source',
-    repoUrl: 'https://github.com/ericksuper8000-source',
+    repo: 'github.com/ericksuper8000-source/caja-chica-bot',
+    repoUrl: 'https://github.com/ericksuper8000-source/caja-chica-bot',
     summary:
-      'AI assistant backend: FastAPI webhooks, Celery/Redis, OpenAI Whisper + GPT-4o-mini, Google Sheets API, ' +
-      'Docker Compose and 48 automated pytest tests.',
+      'Production-style AI backend: Meta WhatsApp webhooks, Celery/Redis, OpenAI Whisper + GPT-4o-mini with Structured Outputs, Google Sheets storage and measurable LLM precision.',
     description:
-      'Backend for an AI assistant that manages a small-business petty cash (caja chica) ledger through WhatsApp. ' +
-      'Built with FastAPI webhooks, a Celery/Redis task queue, OpenAI Whisper + GPT-4o-mini for transcription and ' +
-      'summaries, Google Sheets API as storage, and Docker Compose for orchestration. Includes 48 automated pytest ' +
-      'tests, HMAC signature validation and rate limiting.',
+      'Production-style AI backend that manages a small-business petty cash (caja chica) ledger through WhatsApp. ' +
+      'Voice notes and messages are transcribed with OpenAI Whisper and parsed with GPT-4o-mini using Structured ' +
+      'Outputs — understanding Costa Rican slang like "rojos", "tucanes" and "tejas" — then persisted to Google ' +
+      'Sheets with an automatic confirmation reply. Includes intent detection (register / correct / clarify), ' +
+      'delta-based corrections that preserve unmentioned fields, HMAC-SHA256 webhook verification, rate limiting, ' +
+      'health checks and a measurable precision harness: a golden set of 34 cases / 33 real audios evaluated ' +
+      'automatically (monto 96.7%+, categoría 100%, tipo 100%).',
     bullets: [
-      'FastAPI webhooks + Celery/Redis task queue for async processing.',
-      'OpenAI Whisper + GPT-4o-mini for voice transcription and AI summaries.',
-      'Google Sheets API as storage layer and Docker Compose orchestration.',
-      '48 automated pytest tests, HMAC signature validation and rate limiting.',
+      'Meta WhatsApp webhook with HMAC-SHA256 signature verification and 7 nested Pydantic v2 models.',
+      'Async pipeline: Whisper transcription → GPT-4o-mini Structured Outputs (amount/category/type) → Google Sheets → WhatsApp confirmation.',
+      'LLM prompt engineering: financial extraction from Costa Rican slang, tuned against a 34-case golden set evaluated automatically.',
+      'Intent detection and delta-based corrections: "corrige, eran 5000" updates the last row without rewriting unmentioned fields.',
+      'Hardening: rate limiting (slowapi), health checks, client caching, single event loop, secure temp files.',
+      'QA: 48/48 pytest, Ruff, Black, Mypy (incl. --strict) with CI on GitHub Actions + GitLab CI.',
     ],
-    tags: ['FastAPI', 'Celery', 'Redis', 'OpenAI', 'Docker Compose', 'pytest'],
+    tags: ['FastAPI', 'Celery', 'Redis', 'OpenAI', 'Whisper', 'LLM', 'Docker Compose', 'Google Sheets', 'pytest'],
     related: [
       { label: 'API-Learning-Lab', to: '/mis-proyectos/api-learning-lab' },
       { label: 'Python & Backend Development', to: '/conocimientos/python-backend' },
@@ -551,23 +568,25 @@ export const projects = [
     name: 'CI/CD Pipeline Labs — Multi-Registry Delivery Pipeline',
     urlPath: 'projects › cicd-pipeline-labs',
     repo: 'github.com/ericksuper8000-source/proyecto1',
-    repoUrl: 'https://github.com/ericksuper8000-source',
+    repoUrl: 'https://github.com/ericksuper8000-source/proyecto1',
     summary:
-      'Full delivery pipeline: GitHub Actions + GitLab CI with lint, test and Docker stages publishing to three ' +
-      'registries, with Watchtower auto-deploy.',
+      'Full delivery pipeline: GitHub Actions + GitLab CI with lint, test and Docker stages publishing to three registries, with Watchtower auto-deploy.',
     description:
-      'Flagship DevOps project: a full delivery pipeline designed with GitHub Actions and GitLab CI running lint, ' +
-      'test and Docker stages. A single image is built and published to three registries (Docker Hub, GHCR, GitLab ' +
-      'Container Registry). Local continuous deployment is implemented with Docker Compose + Watchtower (auto-recreate ' +
-      'on new image) including restart policies and image lifecycle management. Applies Git flow (master/develop), ' +
-      'conventional commits and mirrored repositories on GitHub and GitLab.',
+      'Flagship DevOps project tracing the complete software delivery lifecycle — from a small Python app to a ' +
+      'containerized, multi-registry, continuously delivered pipeline. Code quality tools (Black, Ruff, Mypy, ' +
+      'pytest) gate every commit; identical CI/CD pipelines run on GitHub Actions and GitLab CI; a single Docker ' +
+      'image is published to three registries (Docker Hub, GHCR, GitLab Container Registry); and Docker Compose + ' +
+      'Watchtower simulate continuous deployment locally. The roadmap is public and phase-based: currently ' +
+      'advancing through SSH and remote connections toward a real VPS deployment on Oracle Cloud Always Free, ' +
+      'then production hardening and observability, evolving the app into a FastAPI service.',
     bullets: [
-      'Lint, test and Docker stages in GitHub Actions + GitLab CI.',
-      'One image built and published to three registries (Docker Hub, GHCR, GitLab Container Registry).',
-      'Local CD with Docker Compose + Watchtower (auto-recreate), restart policies and image lifecycle management.',
-      'Git flow (master/develop), conventional commits and mirrored repositories.',
+      'Lint, test and build stages on GitHub Actions + GitLab CI from mirrored repositories.',
+      'One image published to three registries: Docker Hub, GHCR and GitLab Container Registry.',
+      'Local CD simulation with Docker Compose + Watchtower (auto-recreate) and image lifecycle management.',
+      'Git flow (master/develop), conventional commits, ADRs and an SDD-style execution plan with session logs.',
+      'Roadmap: SSH → VPS (Oracle Cloud Always Free) → Linux admin → production hardening & observability → FastAPI full stack.',
     ],
-    tags: ['GitHub Actions', 'GitLab CI', 'Docker', 'YAML', 'Watchtower', 'CI/CD'],
+    tags: ['GitHub Actions', 'GitLab CI', 'Docker', 'YAML', 'Watchtower', 'CI/CD', 'VPS'],
     related: [
       { label: 'DevOps Engineering Degree', to: '/educacion/devops-engineering' },
       { label: 'CI/CD & Docker Containerization', to: '/conocimientos/cicd-containers' },
@@ -583,19 +602,22 @@ export const projects = [
     repo: 'VirtualBox lab environment',
     repoUrl: 'https://www.virtualbox.org/',
     summary:
-      'Hands-on Debian 13 environment (VirtualBox): SSH, users/permissions, snapshots, with a 45-lab roadmap to ' +
-      'real VPS deployment.',
+      'Hands-on Debian 13 environment (VirtualBox): SSH, users/permissions, snapshots, with a 45-lab roadmap to real VPS deployment.',
     description:
-      'Dedicated virtual lab for learning Linux system administration. Configures and maintains a Debian 13 ' +
-      'environment in VirtualBox with SSH server, Guest Additions, shared folders and baseline snapshots. ' +
-      'Following a 45-lab curriculum covering users/permissions, systemd services, package management (APT), ' +
-      'firewalls (UFW), Nginx, Docker deployment and monitoring, toward a real VPS deployment.',
+      'Dedicated virtual lab for learning Linux system administration the same way the CI/CD and API projects ' +
+      'are built: one structured lab at a time, with reasoning behind each decision. Configures and maintains a ' +
+      'Debian 13 environment in VirtualBox with SSH server, Guest Additions, shared folders and baseline ' +
+      'snapshots, then follows a 45-lab curriculum covering users & permissions, sudo, systemd services, package ' +
+      'management (APT), firewalls (UFW), Nginx reverse proxy, Docker deployment and monitoring — culminating in ' +
+      'a real VPS deployment with production hardening.',
     bullets: [
-      'Debian 13 lab environment in VirtualBox: SSH server, Guest Additions, shared folders, snapshots.',
-      '45-lab curriculum: users/permissions, systemd, APT, UFW, Nginx, Docker deployment and monitoring.',
-      'Path toward real VPS deployment (Nginx, Let\'s Encrypt, firewalls, monitoring).',
+      'Debian 13 lab in VirtualBox: SSH server, Guest Additions, shared folders and baseline snapshots.',
+      '45-lab curriculum: users & permissions, sudo, systemd services and package management (APT).',
+      'Networking & security: UFW firewalls, Nginx reverse proxy and monitoring.',
+      'Deployment path: Docker deployment on Linux and the roadmap to a real VPS with production hardening.',
+      'Automation mindset: Python scripts to drive configuration, growing Shell/Bash skills.',
     ],
-    tags: ['Linux', 'Debian', 'SSH', 'systemd', 'Nginx', 'VirtualBox'],
+    tags: ['Linux', 'Debian', 'SSH', 'systemd', 'Nginx', 'VirtualBox', 'Bash'],
     related: [
       { label: 'Linux Administration & Cloud Fundamentals', to: '/conocimientos/linux-cloud' },
       { label: 'AWS Cloud Practitioner', to: '/educacion/aws-cloud-practitioner' },
@@ -611,18 +633,21 @@ export const projects = [
     repo: 'github.com/ericksuper8000-source/python-data-analyzer',
     repoUrl: 'https://github.com/ericksuper8000-source/python-data-analyzer',
     summary:
-      'Data analysis scripts: CSV ingestion, date parsing, group-by aggregations and top-seller reporting with ' +
-      'Pandas/NumPy.',
+      'Data analysis with pandas + matplotlib: CSV ingestion, date parsing, group-by aggregations and sales insights.',
     description:
-      'Data analysis project using Python with Pandas and NumPy: ingests CSV sales data, parses dates, performs ' +
-      'group-by aggregations and produces top-seller reports. Demonstrates structured data processing applied to ' +
-      'real business questions.',
+      'A focused data-analysis project demonstrating the core pandas workflow on real sales data: load a CSV, ' +
+      'explore the dataset structure (shape, dtypes), filter by date, and compute revenue per day, total units ' +
+      'sold and best-selling products — ending with a matplotlib bar chart of units sold per product. Built ' +
+      'incrementally over ~5 focused sessions so each concept stays clear, following a step-by-step flow: ' +
+      'load → explore → filter → analyze → visualize.',
     bullets: [
-      'CSV ingestion and date parsing with Pandas.',
-      'Group-by aggregations and top-seller reporting.',
-      'Structured data processing applied to business questions.',
+      'CSV loading, dataset exploration (shape, dtypes) and date parsing with pandas.',
+      'Aggregations with groupby: revenue per day, total units sold and best-selling product.',
+      'Date filtering and user input handling (YYYY-MM-DD).',
+      'Data visualization with matplotlib: units sold per product bar chart.',
+      'Documented design decisions and a clean step-by-step data flow, built over ~5 learning sessions.',
     ],
-    tags: ['Python', 'Pandas', 'NumPy', 'Data Analysis', 'CSV'],
+    tags: ['Python', 'Pandas', 'NumPy', 'matplotlib', 'Data Analysis', 'CSV'],
     related: [
       { label: 'Relational Databases & Data Integrity', to: '/conocimientos/databases' },
       { label: 'Database Analysis & Design — Platzi', to: '/educacion/database-analysis-platzi' },
@@ -657,7 +682,7 @@ export const skills = [
     ],
     tags: ['QA', 'Test Design', 'pytest', 'Regression', 'Automation', 'Defect Prevention'],
     related: [
-      { label: 'Catalina Marketing — QA Validation', to: '/experiencia/catalina' },
+      { label: 'Catalina Marketing — Senior Campaign Specialist', to: '/experiencia/catalina' },
       { label: 'Cheetah Digital — Senior CQE', to: '/experiencia/cheetah-digital' },
       { label: 'WhatsApp Finance Assistant', to: '/mis-proyectos/caja-chica-bot' },
     ],
@@ -763,6 +788,35 @@ export const skills = [
       { label: 'Linux DevOps Labs', to: '/mis-proyectos/linux-devops-labs' },
       { label: 'AWS Cloud Practitioner', to: '/educacion/aws-cloud-practitioner' },
       { label: 'CI/CD & Docker Containerization', to: '/conocimientos/cicd-containers' },
+    ],
+  },
+  {
+    slug: 'ai-assisted-engineering',
+    type: 'skill',
+    iconDomain: 'openai.com',
+    title: 'AI-Assisted Engineering — SDD, Agents & LLM Integration',
+    urlPath: 'skills › ai-assisted-engineering',
+    summary:
+      'Spec-Driven Development, autonomous AI agents, LLM APIs with structured outputs, prompt precision evaluation, RAG fundamentals and open-source models.',
+    description:
+      'Building AI-assisted engineering skills hands-on across portfolio projects. Certified in Spec-Driven ' +
+      'Development (SDD): technical blueprints, token-efficient architecture and context-aware autonomous agents ' +
+      'with bootstrap protocols (AGENTS.md). Integrating LLMs in production-style code — OpenAI Whisper + ' +
+      'GPT-4o-mini with Structured Outputs, prompt tuning and measurable precision evaluation (golden-set ' +
+      'testing). Exploring RAG fundamentals (document ingestion, memory layers) and experimenting with ' +
+      'open-source models (DeepSeek, Qwen, Kimi) for cost-efficient inference.',
+    bullets: [
+      'Spec-Driven Development (SDD): blueprints, execution plans and token budget optimization.',
+      'Orchestrating AI agents with bootstrap protocols (AGENTS.md) and autonomous coding workflows.',
+      'LLM APIs: structured outputs, prompt engineering and golden-set precision evaluation.',
+      'RAG fundamentals: document ingestion and memory layers for grounded responses.',
+      'Open-source models: hands-on experimentation with DeepSeek, Qwen and Kimi.',
+    ],
+    tags: ['SDD', 'AI Agents', 'LLM', 'Prompt Engineering', 'Structured Outputs', 'RAG', 'OpenAI', 'DeepSeek', 'Qwen', 'Kimi'],
+    related: [
+      { label: 'Advanced AI-Assisted Engineering & SDD', to: '/educacion/spec-driven-development' },
+      { label: 'WhatsApp Finance Assistant', to: '/mis-proyectos/caja-chica-bot' },
+      { label: 'API-Learning-Lab', to: '/mis-proyectos/api-learning-lab' },
     ],
   },
 ];
@@ -877,6 +931,13 @@ function buildIndex() {
     description: `Phone ${profile.phone} · Email ${profile.email} · ${profile.location}`,
     keywords: `contact phone email ${profile.phone} ${profile.email} linkedin github gitlab`,
   });
+  items.push({
+    type: 'art',
+    title: 'The Art of Precision — Realism Tattoo Work',
+    url: '/arte',
+    description: 'Realism tattoo artist and academic illustrator: the pursuit of perfection and detail beyond the terminal.',
+    keywords: 'art tattoo realism precision studio ink illustration drawing academic tattoo artist',
+  });
   return items;
 }
 
@@ -914,4 +975,5 @@ export const sectionLink = {
   about: '/sobre-erick',
   curriculum: '/curriculum',
   contact: '/contacto',
+  art: '/arte',
 };

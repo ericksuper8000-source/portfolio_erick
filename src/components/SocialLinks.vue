@@ -15,8 +15,8 @@
 
 <script setup>
 const socialLinks = [
-  { name: 'GitHub', url: 'https://github.com/erickperez', icon: 'fab fa-github' },
-  { name: 'LinkedIn', url: 'https://linkedin.com/in/erickperez', icon: 'fab fa-linkedin' },
-  { name: 'Email', url: 'mailto:tu-correo@ejemplo.com', icon: 'fas fa-envelope' }
+  { name: 'GitHub', url: 'https://github.com/ericksuper8000-source', icon: 'fab fa-github' },
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/erick-perez88', icon: 'fab fa-linkedin' },
+  { name: 'Email', url: 'mailto:ericksuper80@hotmail.com', icon: 'fas fa-envelope' }
 ];
 </script>
